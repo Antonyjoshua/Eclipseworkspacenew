@@ -2493,3 +2493,92 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 2024-05-21 16:28:06,571 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\depth.com\src\main\resources
 2024-05-21 16:28:06,576 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-05-21 16:28:06,580 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\depth.com\src\test\resources
+2024-05-21 16:43:22,851 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-21 23:42:25,951 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:42:25,997 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-21 23:42:26,009 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:42:26,010 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-21 23:45:57,901 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:45:57,901 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-21 23:45:57,905 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:45:57,905 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-21 23:46:37,698 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:46:37,699 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-21 23:46:37,710 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:46:37,710 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-21 23:46:48,210 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:46:48,210 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-21 23:46:48,212 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:46:48,214 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-21 23:57:37,669 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:57:37,669 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-21 23:57:37,672 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-21 23:57:37,673 [Worker-36: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:01:25,043 [Worker-43: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:01:25,043 [Worker-43: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:01:25,047 [Worker-43: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:01:25,047 [Worker-43: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:05:02,195 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:05:02,195 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:05:02,199 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:05:02,199 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:05:11,649 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:05:11,649 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:05:11,654 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:05:11,654 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:05:52,390 [Worker-45: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:05:52,391 [Worker-45: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:05:52,395 [Worker-45: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:05:52,395 [Worker-45: Launching Standalonetest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:06:31,816 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:06:31,816 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:06:31,819 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:06:31,820 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:08:02,256 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:08:02,256 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:08:02,259 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:08:02,259 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:08:10,434 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:08:10,434 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:08:10,437 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:08:10,438 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:09:03,890 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:09:03,891 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:09:03,895 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:09:03,895 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:10:11,926 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:10:11,926 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:10:11,933 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:10:11,933 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:11:47,309 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:11:47,310 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:11:47,313 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:11:47,313 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:16:08,332 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:16:08,335 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:16:08,344 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:16:08,344 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:18:16,585 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:18:16,586 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:18:16,590 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:18:16,590 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:18:56,642 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:18:56,642 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:18:56,646 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:18:56,647 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:19:07,476 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:19:07,476 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:19:07,480 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:19:07,481 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:22:14,155 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:22:14,168 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:22:14,171 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:22:14,171 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:23:21,647 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:23:21,647 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:23:21,650 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:23:21,650 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
+2024-05-22 00:23:54,769 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:23:54,769 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\main\resources
+2024-05-22 00:23:54,772 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-22 00:23:54,772 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ACW USER\eclipse-workspace\RealTimeProject\src\test\resources
