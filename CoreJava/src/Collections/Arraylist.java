@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Arraylist {
 
@@ -21,6 +22,9 @@ public class Arraylist {
        ar.remove(2);
        System.out.println(ar);
        System.out.println(ar.size());
+       for (int i = 0; i < ar.size(); i++) {
+		System.out.println(ar.get(i));
+	}
      
        
        
