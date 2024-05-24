@@ -19,6 +19,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import SeleniumRealtime.pageobects.Landingpage;
+
 public class Standalonetest {
 
 	public static void main(String[] args) throws AWTException, InterruptedException {
@@ -27,6 +29,7 @@ public class Standalonetest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/client");
+		Landingpage lp= new Landingpage(driver);
 		driver.findElement(By.id("userEmail")).sendKeys("antony@yopmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Welcome@123");
 		driver.findElement(By.id("login")).click();
