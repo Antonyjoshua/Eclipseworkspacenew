@@ -6,7 +6,7 @@ public class Inherit_3 extends Super_Inherit {
 	public Inherit_3(int a)// local variable
 
 	{
-		// this is invoke the parent class constructor and pass the value of a
+		// super keyword invoke the parent class constructor and pass the value of a
 		// when we use super keyword in child class, it should be in the first line of
 		// the constructor.
 		super(a);

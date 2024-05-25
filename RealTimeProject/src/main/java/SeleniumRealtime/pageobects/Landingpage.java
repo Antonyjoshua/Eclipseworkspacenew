@@ -6,10 +6,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Landingpage {
+import SeleniumRealtime.abstractcomponents.AbstractComponents;
+//page object classes
+public class Landingpage extends AbstractComponents{
+	// Page objects are classes that represent a page or a significant component of
+	// a web application. These classes encapsulate the details of how to interact
+	// with the elements on the page, including the locators used to find those
+	// elements. Page objects provide methods that perform actions on the page,
+	// abstracting the low-level interaction details from the test scripts.
+
 	WebDriver driver;
 
 	public Landingpage(WebDriver driver) {
+		super(driver);//// super keyword invoke the parent class constructor and pass the value of driver
+		// when we use super keyword in child class, it should be in the first line of
+		// the constructor.
 		this.driver = driver;
 		// Automatic Initialization: Page elements are initialized automatically using
 		// PageFactory.initElements().
@@ -45,9 +56,8 @@ public class Landingpage {
 		submit.click();
 
 	}
-	
-	public void url(String url) 
-	{
+
+	public void url(String url) {
 		driver.get(url);
 
 	}
