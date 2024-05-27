@@ -2,12 +2,16 @@ package SeleniumRealtime.pageobects;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 import SeleniumRealtime.abstractcomponents.AbstractComponents;
 
@@ -36,11 +40,11 @@ public class Product_catalogue extends AbstractComponents {
 	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.mb-3")));
 	// List<WebElement> products = driver.findElements(By.cssSelector("div.mb-3"));
 	By wait = By.cssSelector("div.mb-3");
-	By addtocart = By.cssSelector(".card-body button:last-of-type");
+	
 
 //getting product list
 	public List<WebElement> getProductList() {
-		waitForElementToAppe(wait);
+		waitForElementToAppear(wait);
 		// waitForElementToAppe(By.cssSelector("div.mb-3"));
 		return products;
 
@@ -69,9 +73,28 @@ public class Product_catalogue extends AbstractComponents {
 	// clicking that element by name
 	// prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
 	// we cannot apply page factory for within webelement.findelement. It's only for driver.findelement
+	//driver.findElement(By.xpath("(//button[@class='btn btn-custom'])[3]")).click();
+	@FindBy (xpath= "(//button[@class='btn btn-custom'])[3]")
+	WebElement cartclick;
+	
+	@FindBy (css= ".ng-animating")
+	WebElement loader;
+	By addtocart = By.cssSelector(".card-body button:last-of-type");
+	By successalert= By.id("toast-container");
+	
 	public void addProductToCart(String productname) {
 		WebElement prod = getProductByName(productname);
 		prod.findElement(addtocart).click();
+		waitForElementToAppear(successalert);
+		waitForElementTodisappear(loader);
+		//cartclick.click();
+		
+
+	}
+	public Cart_Page goToCart() {
+		cartclick.click();
+		Cart_Page cp = new Cart_Page(driver);
+		return cp; //after this action, it moves to cart page
 
 	}
 

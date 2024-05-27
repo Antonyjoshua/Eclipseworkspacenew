@@ -1,14 +1,16 @@
 package SeleniumRealtime.pageobects;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import SeleniumRealtime.abstractcomponents.AbstractComponents;
+
 //page object classes
-public class Landingpage extends AbstractComponents{
+public class Landingpage extends AbstractComponents {// ctrl+click= to view the parent class
 	// Page objects are classes that represent a page or a significant component of
 	// a web application. These classes encapsulate the details of how to interact
 	// with the elements on the page, including the locators used to find those
@@ -18,7 +20,8 @@ public class Landingpage extends AbstractComponents{
 	WebDriver driver;
 
 	public Landingpage(WebDriver driver) {
-		super(driver);//// super keyword invoke the parent class constructor and pass the value of driver
+		super(driver);//// super keyword invoke the parent class constructor and pass the value of
+						//// driver
 		// when we use super keyword in child class, it should be in the first line of
 		// the constructor.
 		this.driver = driver;
@@ -50,10 +53,15 @@ public class Landingpage extends AbstractComponents{
 	// clean, readable, and maintainable.
 	// Page object should not hold any data, it should come from the test class. It
 	// should only focus on elements and actions
-	public void login_Application(String email, String pass) {
+	public Product_catalogue login_Application(String email, String pass) {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(pass);
-		submit.click();
+		submit.click();// if we know, after a action it will move to next page, we can create the
+						// object in that method in page object class
+		// Encapsulates the object creation inside the method- Driver object creation
+		// within the page object classes ensapulating from the tests
+		Product_catalogue pc = new Product_catalogue(driver);
+		return pc;
 
 	}
 
