@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.corejave.Overloading"/>
-    <fullyQualifiedTypeName name="com.corejave.Overriding"/>
     <fullyQualifiedTypeName name="com.corejave.InterviewMinMaxValue"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -41,7 +37,6 @@
     <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
     <fullyQualifiedTypeName name="testng.com.Super_Inherit"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeDriver"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
     <fullyQualifiedTypeName name="java.time.Duration"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="SeleniumRealtime.abstractcomponents.AbstractComponents"/>
     <fullyQualifiedTypeName name="SeleniumRealtime.pageobects.Product_catalogue"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="SeleniumRealtime.Testcomponents.BaseTest"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 </qualifiedTypeNameHistroy>
