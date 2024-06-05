@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test  name="Test">
-	  <classes>
-		  <class name="SeleniumRealtime.RealTimeProject.Demo"></class>
-	  </classes>
+	<!-- in TestNG, each <test> element within the test suite XML file should have a unique name.  -->
+  <test thread-count="5" name="Convertedcode">
+    <classes>
+      <class name="SeleniumRealtime.testcases.Standalone_convertTest"/>
+    </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="Errorvalidation">
+    <classes>
+     <class name="SeleniumRealtime.testcases.Error_Validation_Test"/>
+    </classes>
+  </test> <!-- Test -->
+   
 </suite> <!-- Suite -->

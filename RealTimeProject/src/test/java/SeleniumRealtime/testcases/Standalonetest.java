@@ -1,8 +1,5 @@
 package SeleniumRealtime.testcases;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.List;
 
@@ -12,24 +9,19 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import SeleniumRealtime.pageobjects.Landingpage;
 
 public class Standalonetest {
 
-	public static void main(String[] args) throws AWTException, InterruptedException {
+	public static void main(String[] args) {
 		String productname = "IPHONE 13 PRO";
 		WebDriver driver = new EdgeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/client");
-		Landingpage lp= new Landingpage(driver);
 		driver.findElement(By.id("userEmail")).sendKeys("antony@yopmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Welcome@123");
 		driver.findElement(By.id("login")).click();

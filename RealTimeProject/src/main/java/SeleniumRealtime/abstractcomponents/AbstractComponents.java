@@ -25,9 +25,16 @@ public class AbstractComponents // base parent class for the page object files- 
 
 	// Webelement- driver.findElement(By.id("userEmail"))
 	// by locator- By.id("userEmail")- return type is by
+	//by by locator
 	public void waitForElementToAppear(By findby) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findby));
+
+	}
+	//by webelement
+	public void waitForWebElementToAppear(WebElement find) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOf(find));
 
 	}
 

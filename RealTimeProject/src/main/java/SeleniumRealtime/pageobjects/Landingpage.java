@@ -66,6 +66,16 @@ public class Landingpage extends AbstractComponents {// ctrl+click= to view the 
 		return pc;
 
 	}
+	//.ng-tns-c4-17.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error
+	////div[contains(@class,'toast-error')]
+	@FindBy(xpath = "//div[contains(@class,'toast-error')]")
+	WebElement errorMessage;
+	
+	public String getErrorMessage()
+	{
+		waitForWebElementToAppear(errorMessage);
+		return errorMessage.getText();
+	}
 
 	public void url(String url) {
 		driver.get(url);

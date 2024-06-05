@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-01T02:03:01 IST" name="Default suite" finished-at="2024-06-01T02:03:27 IST" duration-ms="25726">
+  <suite started-at="2024-06-06T01:12:37 IST" name="Default suite" finished-at="2024-06-06T01:12:42 IST" duration-ms="5291">
     <groups>
     </groups>
-    <test started-at="2024-06-01T02:03:01 IST" name="Default test" finished-at="2024-06-01T02:03:27 IST" duration-ms="25726">
-      <class name="SeleniumRealtime.testcases.Standalone_convert">
-        <test-method signature="convertedcode()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convert@52719fb6]" started-at="2024-06-01T02:03:01 IST" name="convertedcode" finished-at="2024-06-01T02:03:27 IST" duration-ms="25567" status="PASS">
+    <test started-at="2024-06-06T01:12:37 IST" name="Default test" finished-at="2024-06-06T01:12:42 IST" duration-ms="5291">
+      <class name="SeleniumRealtime.testcases.Error_Validation_Test">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Error_Validation_Test@f09733f]" started-at="2024-06-06T01:12:37 IST" name="launching_App" finished-at="2024-06-06T01:12:40 IST" duration-ms="3582" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- convertedcode -->
-      </class> <!-- SeleniumRealtime.testcases.Standalone_convert -->
+        </test-method> <!-- launching_App -->
+        <test-method signature="logininvalid_Credencial()[pri:0, instance:SeleniumRealtime.testcases.Error_Validation_Test@f09733f]" started-at="2024-06-06T01:12:40 IST" name="logininvalid_Credencial" finished-at="2024-06-06T01:12:42 IST" duration-ms="1320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logininvalid_Credencial -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Error_Validation_Test@f09733f]" started-at="2024-06-06T01:12:42 IST" name="close" finished-at="2024-06-06T01:12:42 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumRealtime.testcases.Error_Validation_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
