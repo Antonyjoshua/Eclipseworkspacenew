@@ -73,30 +73,30 @@ public class Standalone_convertTest extends BaseTest {
 //		driver.close();
 
 //	}
-	/*@Test
-	public void convertedcode1() throws IOException {
-		String productname = "IPHONE 13 PRO";
-		Landingpage lp = launching_App();
-		Product_catalogue pc = lp.login_Application("antony@yopmail.com", "Welcome@123");
-		pc.getProductByName("IPHONE 13 PRO");
-		pc.addProductToCart(productname);
-		Cart_Page cp = pc.goToCart();
-		boolean cartProductName = cp.getCartProductName(productname);
-		Assert.assertTrue(cartProductName);
-		Checkout_page chp = cp.checkout();
-		Confirmation_Page cfp = chp.placeOrder("Ind");
-		String message = cfp.orderConfirm();
-		Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-		driver.close();
-
-	}*/
+	/*
+	 * @Test public void convertedcode1() throws IOException { String productname =
+	 * "IPHONE 13 PRO"; Landingpage lp = launching_App(); Product_catalogue pc =
+	 * lp.login_Application("antony@yopmail.com", "Welcome@123");
+	 * pc.getProductByName("IPHONE 13 PRO"); pc.addProductToCart(productname);
+	 * Cart_Page cp = pc.goToCart(); boolean cartProductName =
+	 * cp.getCartProductName(productname); Assert.assertTrue(cartProductName);
+	 * Checkout_page chp = cp.checkout(); Confirmation_Page cfp =
+	 * chp.placeOrder("Ind"); String message = cfp.orderConfirm();
+	 * Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+	 * driver.close();
+	 * 
+	 * }
+	 */
 	@Test
-	public void convertedcode(){
+	public void convertedcode() {
 		String productname = "IPHONE 13 PRO";
 		Product_catalogue pc = lp.login_Application("antony@yopmail.com", "Welcome@123");
 		pc.getProductByName("IPHONE 13 PRO");
 		pc.addProductToCart(productname);
-		Cart_Page cp = pc.goToCart();
+		Cart_Page cp = pc.goToCart();// We are using pc object for gotocart method eventhough it's not in the product
+										// catalog class and it's in the abstractcompenent class. Reason is since
+										// product catelogue class inherting abstract comp class It has all the methods
+										// present in abs class. We can call that method using the pc object
 		boolean cartProductName = cp.getCartProductName(productname);
 		Assert.assertTrue(cartProductName);
 		Checkout_page chp = cp.checkout();

@@ -5,8 +5,11 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import SeleniumRealtime.pageobjects.Cart_Page;
 
 public class AbstractComponents // base parent class for the page object files- it stores all reusable content
 {
@@ -41,6 +44,15 @@ public class AbstractComponents // base parent class for the page object files- 
 	public void waitForElementTodisappear(WebElement load) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.invisibilityOf(load));
+
+	}
+	@FindBy(xpath = "(//button[@class='btn btn-custom'])[3]")
+	WebElement cartclick;
+	
+	public Cart_Page goToCart() {
+		cartclick.click();
+		Cart_Page cp = new Cart_Page(driver);
+		return cp; // after this action, it moves to cart page
 
 	}
 
