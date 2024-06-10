@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="com.corejave.Date_calender"/>
     <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="SeleniumRealtime.Testcomponents.BaseTest"/>
     <fullyQualifiedTypeName name="SeleniumRealtime.pageobjects.Landingpage"/>
+    <fullyQualifiedTypeName name="SeleniumRealtime.pageobjects.Order_Page"/>
 </qualifiedTypeNameHistroy>

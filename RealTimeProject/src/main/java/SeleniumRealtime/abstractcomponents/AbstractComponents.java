@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import SeleniumRealtime.pageobjects.Cart_Page;
+import SeleniumRealtime.pageobjects.Order_Page;
 
 public class AbstractComponents // base parent class for the page object files- it stores all reusable content
 {
@@ -55,5 +56,15 @@ public class AbstractComponents // base parent class for the page object files- 
 		return cp; // after this action, it moves to cart page
 
 	}
+	//button[@routerlink= '/dashboard/myorders']
+	@FindBy(xpath = "//button[@routerlink= '/dashboard/myorders']")
+	WebElement orderpage;
+	public Order_Page goToorder() {
+		orderpage.click();
+		Order_Page op = new Order_Page(driver);
+		return op; // after this action, it moves to cart page
+
+	}
+	
 
 }

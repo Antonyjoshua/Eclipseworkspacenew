@@ -10,7 +10,7 @@ import SeleniumRealtime.pageobjects.Cart_Page;
 import SeleniumRealtime.pageobjects.Product_catalogue;
 
 public class Error_Validation_Test extends BaseTest {
-	@Test
+	@Test(groups = "Errorvalidation")
 	public void logininvalid_Credencial() {
 		 lp.login_Application("josh@yopmail.com", "Welcome@12");
 		 System.out.println(lp.getErrorMessage());

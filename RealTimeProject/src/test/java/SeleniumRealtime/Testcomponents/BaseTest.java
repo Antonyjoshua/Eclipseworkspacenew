@@ -21,7 +21,7 @@ public class BaseTest // this class will hold all the reusable content related t
 								// different pages represented by different page objects within the test case.
 	public Landingpage lp;// landing page object
 
-	public WebDriver initialize_Driver() throws IOException  {
+	public WebDriver initialize_Driver() throws IOException {
 		// Globalproperty file where we can store which browser we want to execute
 		// create a file with .properties extension. If we write any file with
 		// .properties extension then using properties class in java, we will be able to
@@ -54,7 +54,14 @@ public class BaseTest // this class will hold all the reusable content related t
 
 	}
 
-	@BeforeMethod
+	// any class that inherits this class, the before and after method in this class
+	// becomes their class methods
+	// If we use groups concept in testng the before and aftermethod will gets
+	// failed because it except to add the group name in these annotations as well.
+	// If we add name, it will only run for the particular group since it is common
+	// to all test methods, we need to run always run to the before and after
+	// testmethods
+	@BeforeMethod(alwaysRun = true)
 	public void launching_App() throws IOException {
 		driver = initialize_Driver();
 		lp = new Landingpage(driver);// passing driver to the landing page constructor
@@ -63,7 +70,7 @@ public class BaseTest // this class will hold all the reusable content related t
 		// the test class, when @beforemethod annotation not used
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void close() {
 		driver.close();
 

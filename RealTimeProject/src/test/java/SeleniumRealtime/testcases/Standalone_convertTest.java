@@ -13,6 +13,7 @@ import SeleniumRealtime.pageobjects.Cart_Page;
 import SeleniumRealtime.pageobjects.Checkout_page;
 import SeleniumRealtime.pageobjects.Confirmation_Page;
 import SeleniumRealtime.pageobjects.Landingpage;
+import SeleniumRealtime.pageobjects.Order_Page;
 import SeleniumRealtime.pageobjects.Product_catalogue;
 
 public class Standalone_convertTest extends BaseTest {
@@ -87,9 +88,11 @@ public class Standalone_convertTest extends BaseTest {
 	 * 
 	 * }
 	 */
+	String productname = "IPHONE 13 PRO";
+
 	@Test
 	public void convertedcode() {
-		String productname = "IPHONE 13 PRO";
+
 		Product_catalogue pc = lp.login_Application("antony@yopmail.com", "Welcome@123");
 		pc.getProductByName("IPHONE 13 PRO");
 		pc.addProductToCart(productname);
@@ -103,6 +106,22 @@ public class Standalone_convertTest extends BaseTest {
 		Confirmation_Page cfp = chp.placeOrder("Ind");
 		String message = cfp.orderConfirm();
 		Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+
+	}
+
+	@Test(dependsOnMethods = { "convertedcode" }) // first convertedcode method will gets executed. If that method
+													// fails, then this method will get skipped
+	// this method is about logging into the application and checking the order
+	// placed product in the order page
+	// for every test method we need to login into the application
+	public void orderHistoryTest()
+
+	{
+
+		Product_catalogue pc = lp.login_Application("antony@yopmail.com", "Welcome@123");
+		Order_Page op = pc.goToorder();
+		boolean orderProductName = op.getOrderProductName(productname);
+		Assert.assertTrue(orderProductName);
 
 	}
 

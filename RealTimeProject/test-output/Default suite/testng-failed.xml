@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumRealtime.testcases.Error_Validation_Test">
+      <class name="SeleniumRealtime.testcases.Standalone_convertTest">
         <methods>
-          <include name="productErrorValidation"/>
+          <include name="orderHistoryTest"/>
+          <include name="launching_App"/>
+          <include name="close"/>
+          <include name="convertedcode"/>
         </methods>
-      </class> <!-- SeleniumRealtime.testcases.Error_Validation_Test -->
+      </class> <!-- SeleniumRealtime.testcases.Standalone_convertTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
