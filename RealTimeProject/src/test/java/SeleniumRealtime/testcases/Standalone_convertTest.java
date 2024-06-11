@@ -6,6 +6,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import SeleniumRealtime.Testcomponents.BaseTest;
@@ -89,11 +90,11 @@ public class Standalone_convertTest extends BaseTest {
 	 * }
 	 */
 	String productname = "IPHONE 13 PRO";
+    
+	@Test (dataProvider = "getdata", groups = { "multipledata", "Errorvalidation"})
+	public void convertedcode(String email, String password, String productname) {
 
-	@Test
-	public void convertedcode() {
-
-		Product_catalogue pc = lp.login_Application("antony@yopmail.com", "Welcome@123");
+		Product_catalogue pc = lp.login_Application(email, password);
 		pc.getProductByName("IPHONE 13 PRO");
 		pc.addProductToCart(productname);
 		Cart_Page cp = pc.goToCart();// We are using pc object for gotocart method eventhough it's not in the product
@@ -123,6 +124,21 @@ public class Standalone_convertTest extends BaseTest {
 		boolean orderProductName = op.getOrderProductName(productname);
 		Assert.assertTrue(orderProductName);
 
+	}
+	
+	@DataProvider//helps to drive the data and pass multiple data sets
+	public Object[][] getdata()
+	{
+//		Object ob[][]= new Object[2][3];
+//		ob[0][0]="antony@yopmail.com";
+//		ob[0][1]="Welcome@123";
+//		ob[0][2]="IPHONE 13 PRO";
+//		ob[1][0]="josh@yopmail.com";
+//		ob[1][1]="Welcome@123";
+//		ob[1][2]="ADIDAS ORIGINAL";
+//		return ob;
+		return new Object[][] {{"antony@yopmail.com","Welcome@123","IPHONE 13 PRO"},{"josh@yopmail.com","Welcome@123","ADIDAS ORIGINAL"}};
+		
 	}
 
 }
