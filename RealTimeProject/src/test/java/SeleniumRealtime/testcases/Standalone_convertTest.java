@@ -3,6 +3,8 @@ package SeleniumRealtime.testcases;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
@@ -90,18 +92,20 @@ public class Standalone_convertTest extends BaseTest {
 	 * }
 	 */
 	String productname = "IPHONE 13 PRO";
-    
-	@Test (dataProvider = "getdata", groups = { "multipledata", "Errorvalidation"})
-	public void convertedcode(String email, String password, String productname) {
 
-		Product_catalogue pc = lp.login_Application(email, password);
-		pc.getProductByName("IPHONE 13 PRO");
-		pc.addProductToCart(productname);
+	@Test(dataProvider = "getdata", groups = { "multipledata", "Errorvalidation" })
+	// public void convertedcode(String email, String password, String productname)
+	public void convertedcode(HashMap<String,String> input) {
+
+		//Product_catalogue pc = lp.login_Application(email, password);
+		Product_catalogue pc = lp.login_Application(input.get("email"), input.get("password"));
+		//pc.getProductByName(input.get("productname"));
+		pc.addProductToCart(input.get("productname"));
 		Cart_Page cp = pc.goToCart();// We are using pc object for gotocart method eventhough it's not in the product
 										// catalog class and it's in the abstractcompenent class. Reason is since
 										// product catelogue class inherting abstract comp class It has all the methods
 										// present in abs class. We can call that method using the pc object
-		boolean cartProductName = cp.getCartProductName(productname);
+		boolean cartProductName = cp.getCartProductName(input.get("productname"));
 		Assert.assertTrue(cartProductName);
 		Checkout_page chp = cp.checkout();
 		Confirmation_Page cfp = chp.placeOrder("Ind");
@@ -125,10 +129,12 @@ public class Standalone_convertTest extends BaseTest {
 		Assert.assertTrue(orderProductName);
 
 	}
-	
-	@DataProvider//helps to drive the data and pass multiple data sets
-	public Object[][] getdata()
-	{
+
+//	@DataProvider//helps to drive the data and pass multiple data sets
+//	public Object[][] getdata()
+//	{
+	// Way 1
+	//multidimentional array
 //		Object ob[][]= new Object[2][3];
 //		ob[0][0]="antony@yopmail.com";
 //		ob[0][1]="Welcome@123";
@@ -137,8 +143,27 @@ public class Standalone_convertTest extends BaseTest {
 //		ob[1][1]="Welcome@123";
 //		ob[1][2]="ADIDAS ORIGINAL";
 //		return ob;
-		return new Object[][] {{"antony@yopmail.com","Welcome@123","IPHONE 13 PRO"},{"josh@yopmail.com","Welcome@123","ADIDAS ORIGINAL"}};
-		
-	}
+	// way2
+//		return new Object[][] {{"antony@yopmail.com","Welcome@123","IPHONE 13 PRO"},{"josh@yopmail.com","Welcome@123","ADIDAS ORIGINAL"}};
+//		
+//	}
 
+	@DataProvider //Integration of hash map to dataprovider to send the data as one hash object
+	public Object[][] getdata() {
+		// way 3
+		//when we use object we can use any data type
+		//HashMap<Object,Object> map= new HashMap<Object,Object>();
+		HashMap<String,String> map= new HashMap<String,String>();
+		//key, value pair
+		map.put("email", "antony@yopmail.com");
+		map.put("password", "Welcome@123");
+		map.put("productname","IPHONE 13 PRO");
+		HashMap<String,String> map1= new HashMap<String,String>();
+		map1.put("email", "josh@yopmail.com");
+		map1.put("password", "Welcome@123");
+		map1.put("productname","ADIDAS ORIGINAL");
+	
+		return new Object[][] { {map},{map1} };
+
+	}
 }

@@ -2,84 +2,64 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T01:23:50 IST" name="Default suite" finished-at="2024-06-12T01:24:21 IST" duration-ms="31663">
+  <suite started-at="2024-06-14T01:24:58 IST" name="Default suite" finished-at="2024-06-14T01:25:33 IST" duration-ms="35830">
     <groups>
       <group name="Errorvalidation">
-        <method signature="Standalone_convertTest.convertedcode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" name="convertedcode" class="SeleniumRealtime.testcases.Standalone_convertTest"/>
+        <method signature="Standalone_convertTest.convertedcode(java.util.HashMap)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" name="convertedcode" class="SeleniumRealtime.testcases.Standalone_convertTest"/>
       </group> <!-- Errorvalidation -->
       <group name="multipledata">
-        <method signature="Standalone_convertTest.convertedcode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" name="convertedcode" class="SeleniumRealtime.testcases.Standalone_convertTest"/>
+        <method signature="Standalone_convertTest.convertedcode(java.util.HashMap)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" name="convertedcode" class="SeleniumRealtime.testcases.Standalone_convertTest"/>
       </group> <!-- multipledata -->
     </groups>
-    <test started-at="2024-06-12T01:23:50 IST" name="Default test" finished-at="2024-06-12T01:24:21 IST" duration-ms="31663">
+    <test started-at="2024-06-14T01:24:58 IST" name="Default test" finished-at="2024-06-14T01:25:33 IST" duration-ms="35830">
       <class name="SeleniumRealtime.testcases.Standalone_convertTest">
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:23:50 IST" name="launching_App" finished-at="2024-06-12T01:23:57 IST" duration-ms="7198" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:24:58 IST" name="launching_App" finished-at="2024-06-14T01:25:03 IST" duration-ms="5368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="convertedcode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:23:57 IST" name="convertedcode" data-provider="getdata" finished-at="2024-06-12T01:24:01 IST" duration-ms="3950" status="PASS">
+        <test-method signature="convertedcode(java.util.HashMap)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:03 IST" name="convertedcode" data-provider="getdata" finished-at="2024-06-14T01:25:07 IST" duration-ms="3880" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[antony@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Welcome@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[IPHONE 13 PRO]]>
+                <![CDATA[{productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- convertedcode -->
-        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:01 IST" name="close" finished-at="2024-06-12T01:24:01 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:07 IST" name="close" finished-at="2024-06-14T01:25:07 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:01 IST" name="launching_App" finished-at="2024-06-12T01:24:09 IST" duration-ms="7556" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:07 IST" name="launching_App" finished-at="2024-06-14T01:25:12 IST" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="convertedcode(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:09 IST" name="convertedcode" data-provider="getdata" finished-at="2024-06-12T01:24:14 IST" duration-ms="4830" status="PASS">
+        <test-method signature="convertedcode(java.util.HashMap)[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:12 IST" name="convertedcode" data-provider="getdata" finished-at="2024-06-14T01:25:27 IST" duration-ms="15671" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[josh@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Welcome@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL]]>
+                <![CDATA[{productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- convertedcode -->
-        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:14 IST" name="close" finished-at="2024-06-12T01:24:14 IST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:27 IST" name="close" finished-at="2024-06-14T01:25:27 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:14 IST" name="launching_App" finished-at="2024-06-12T01:24:20 IST" duration-ms="6012" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:27 IST" name="launching_App" finished-at="2024-06-14T01:25:32 IST" duration-ms="4467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="orderHistoryTest()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:20 IST" name="orderHistoryTest" finished-at="2024-06-12T01:24:21 IST" depends-on-methods="SeleniumRealtime.testcases.Standalone_convertTest.convertedcode" duration-ms="1200" status="PASS">
+        <test-method signature="orderHistoryTest()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:32 IST" name="orderHistoryTest" finished-at="2024-06-14T01:25:33 IST" depends-on-methods="SeleniumRealtime.testcases.Standalone_convertTest.convertedcode" duration-ms="1253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistoryTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-12T01:24:21 IST" name="close" finished-at="2024-06-12T01:24:21 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.Standalone_convertTest@750e2b97]" started-at="2024-06-14T01:25:33 IST" name="close" finished-at="2024-06-14T01:25:33 IST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

@@ -82,6 +82,14 @@ public class Product_catalogue extends AbstractComponents {
 	By addtocart = By.cssSelector(".card-body button:last-of-type");
 	By successalert = By.id("toast-container");
 
+//	pc.addProductToCart(input.get("productname")); is called.
+//	Inside addProductToCart, getProductByName(productname) is called.
+//	getProductByName retrieves the product list by calling getProductList().
+//	It filters the product list to find the product with the matching name.
+//	The first matching product is returned to addProductToCart.
+//	The "Add to Cart" button for the product is clicked.
+//	The script waits for the success alert to appear.
+//	The script waits for the loader to disappear.
 	public void addProductToCart(String productname) {
 		WebElement prod = getProductByName(productname);
 		prod.findElement(addtocart).click();
