@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Final.Order_OF_Test">
+      <class name="Final.Parameterization">
         <methods>
-          <include name="a"/>
-          <include name="d"/>
+          <include name="checkclass"/>
+          <include name="multipletc"/>
+          <include name="check"/>
         </methods>
-      </class> <!-- Final.Order_OF_Test -->
+      </class> <!-- Final.Parameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

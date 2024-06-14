@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -95,11 +96,11 @@ public class Standalone_convertTest extends BaseTest {
 
 	@Test(dataProvider = "getdata", groups = { "multipledata", "Errorvalidation" })
 	// public void convertedcode(String email, String password, String productname)
-	public void convertedcode(HashMap<String,String> input) {
+	public void purchaseOrder(HashMap<String, String> input) {
 
-		//Product_catalogue pc = lp.login_Application(email, password);
+		// Product_catalogue pc = lp.login_Application(email, password);
 		Product_catalogue pc = lp.login_Application(input.get("email"), input.get("password"));
-		//pc.getProductByName(input.get("productname"));
+		// pc.getProductByName(input.get("productname"));
 		pc.addProductToCart(input.get("productname"));
 		Cart_Page cp = pc.goToCart();// We are using pc object for gotocart method eventhough it's not in the product
 										// catalog class and it's in the abstractcompenent class. Reason is since
@@ -114,7 +115,7 @@ public class Standalone_convertTest extends BaseTest {
 
 	}
 
-	@Test(dependsOnMethods = { "convertedcode" }) // first convertedcode method will gets executed. If that method
+	@Test(dependsOnMethods = { "purchaseOrder" }) // first convertedcode method will gets executed. If that method
 													// fails, then this method will get skipped
 	// this method is about logging into the application and checking the order
 	// placed product in the order page
@@ -134,7 +135,7 @@ public class Standalone_convertTest extends BaseTest {
 //	public Object[][] getdata()
 //	{
 	// Way 1
-	//multidimentional array
+	// multidimentional array
 //		Object ob[][]= new Object[2][3];
 //		ob[0][0]="antony@yopmail.com";
 //		ob[0][1]="Welcome@123";
@@ -148,22 +149,32 @@ public class Standalone_convertTest extends BaseTest {
 //		
 //	}
 
-	@DataProvider //Integration of hash map to dataprovider to send the data as one hash object
-	public Object[][] getdata() {
+	@DataProvider // Integration of hash map to dataprovider to send the data as one hash object
+	public Object[][] getdata() throws IOException {
 		// way 3
-		//when we use object we can use any data type
-		//HashMap<Object,Object> map= new HashMap<Object,Object>();
-		HashMap<String,String> map= new HashMap<String,String>();
-		//key, value pair
-		map.put("email", "antony@yopmail.com");
-		map.put("password", "Welcome@123");
-		map.put("productname","IPHONE 13 PRO");
-		HashMap<String,String> map1= new HashMap<String,String>();
-		map1.put("email", "josh@yopmail.com");
-		map1.put("password", "Welcome@123");
-		map1.put("productname","ADIDAS ORIGINAL");
-	
-		return new Object[][] { {map},{map1} };
+		// when we use object we can use any data type
+		// HashMap<Object,Object> map= new HashMap<Object,Object>();
+		// HashMap<String,String> map= new HashMap<String,String>();
+		// key, value pair
+//		map.put("email", "antony@yopmail.com");
+//		map.put("password", "Welcome@123");
+//		map.put("productname","IPHONE 13 PRO");
+//		HashMap<String,String> map1= new HashMap<String,String>();
+//		map1.put("email", "josh@yopmail.com");
+//		map1.put("password", "Welcome@123");
+//		map1.put("productname","ADIDAS ORIGINAL");
+		// return new Object[][] { {map},{map1} };
+		// way 4
+		// Reading data from the json and creat list of hashmap out of it
+		// create a json file with data
+		// create a method in basetest class which read the json data and convert into
+		// string, then the string is converted into list of hashmap using object mapper class
+		List<HashMap<String, String>> jsonDatatoMap = getJsonDatatoMap(System.getProperty("user.dir")
+				+ "\\src\\test\\java\\SeleniumRealtime\\Testcomponents\\PassingDataToPurchaseOrder.json");
+		// return new Object[][] { {map},{map1} };
+		//sending two data set, each time the test method will run
+		return new Object[][] { { jsonDatatoMap.get(0) }, { jsonDatatoMap.get(1) } };
 
 	}
+
 }

@@ -14,6 +14,7 @@ public class Parameterization {
 		
 
 	}
+	//need to run this class from testng xml file to pass the value to this method
 	@Parameters({"Username","Username2"})
 	@BeforeMethod
 	public void check(String name1, String name2) {

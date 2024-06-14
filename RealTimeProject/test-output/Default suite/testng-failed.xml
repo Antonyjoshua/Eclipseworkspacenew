@@ -5,10 +5,10 @@
     <classes>
       <class name="SeleniumRealtime.testcases.Standalone_convertTest">
         <methods>
+          <include name="purchaseOrder"/>
           <include name="orderHistoryTest"/>
           <include name="launching_App"/>
           <include name="close"/>
-          <include name="convertedcode"/>
         </methods>
       </class> <!-- SeleniumRealtime.testcases.Standalone_convertTest -->
     </classes>

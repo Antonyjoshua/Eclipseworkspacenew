@@ -1,17 +1,27 @@
 package SeleniumRealtime.Testcomponents;
 
+import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.bouncycastle.util.encoders.UTF8;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import SeleniumRealtime.pageobjects.Landingpage;
 
@@ -75,4 +85,22 @@ public class BaseTest // this class will hold all the reusable content related t
 		driver.close();
 
 	}
+
+	public List<HashMap<String, String>> getJsonDatatoMap(String filepath) throws IOException {
+		// read json to string
+		//fileutils- Utility that scans the json or any file and create hashmap out of it
+		// filepath- path of the json file, we sending this as an argument to make this
+		// method as generic, so that any json file can run this method
+		String readFileToString = FileUtils.readFileToString(new File(filepath), StandardCharsets.UTF_8);
+		// Convert the JSON string into a HashMap using Jackson's ObjectMapper.
+		ObjectMapper mapper = new ObjectMapper();
+		// this will store the json data to hash map as a list
+		// {{dataset},{dataset1}}
+		List<HashMap<String, String>> data = mapper.readValue(readFileToString,
+				new TypeReference<List<HashMap<String, String>>>() {
+				});
+		return data;
+
+	}
+
 }
