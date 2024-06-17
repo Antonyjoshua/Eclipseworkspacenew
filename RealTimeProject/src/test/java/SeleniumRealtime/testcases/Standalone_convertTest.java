@@ -1,11 +1,15 @@
 package SeleniumRealtime.testcases;
 
 import java.awt.AWTException;
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
@@ -129,6 +133,13 @@ public class Standalone_convertTest extends BaseTest {
 		boolean orderProductName = op.getOrderProductName(productname);
 		Assert.assertTrue(orderProductName);
 
+	}
+	
+	public String getScreenShot(String testcasename) throws IOException {
+		TakesScreenshot ts= (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\reports\\"+testcasename+".png"));
+		return System.getProperty("user.dir")+"\\reports\\"+testcasename+".png";
 	}
 
 //	@DataProvider//helps to drive the data and pass multiple data sets
