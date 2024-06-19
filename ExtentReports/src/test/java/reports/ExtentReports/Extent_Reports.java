@@ -2,6 +2,7 @@ package reports.ExtentReports;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -41,6 +42,8 @@ public class Extent_Reports {
 		// to set tester name
 		report.setSystemInfo("SDET", "Antony");
 	}
+	// mark a test as failed using assertions or by manually logging the failure
+	// condition in your test script.
 
 	@Test
 	public void reportsDemo() {
@@ -61,6 +64,8 @@ public class Extent_Reports {
 		System.out.println(title);
 		// use that object to explicitly fail a method, add screenshot and lot of
 		// other methods
+		// mark a test as failed using assertions or by manually logging the failure
+		// condition in your test script.
 		createTest.fail("Intentionaly failing this test case");
 		// flush method is mandatory at the end of the test. This will stop watching
 		// this method which means the method gets executed completely. If we have 5
