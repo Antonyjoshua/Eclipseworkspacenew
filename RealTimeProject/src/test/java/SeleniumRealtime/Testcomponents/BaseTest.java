@@ -13,6 +13,8 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.bouncycastle.util.encoders.UTF8;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -60,7 +62,7 @@ public class BaseTest // this class will hold all the reusable content related t
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		return driver;
+		return driver; //- this method will work without returning the driver
 
 	}
 
@@ -73,7 +75,8 @@ public class BaseTest // this class will hold all the reusable content related t
 	// testmethods
 	@BeforeMethod(alwaysRun = true)
 	public void launching_App() throws IOException {
-		driver = initialize_Driver();
+		//initialize_Driver();//- we can just use call the method it will work
+		driver= initialize_Driver(); //this method call the respective browser
 		lp = new Landingpage(driver);// passing driver to the landing page constructor
 		lp.url("https://rahulshettyacademy.com/client");
 		// return lp- return the landingpage instance if you want to call this method in
@@ -84,6 +87,14 @@ public class BaseTest // this class will hold all the reusable content related t
 	public void close() {
 		driver.close();
 
+	}
+	public String getScreenShot(String testcasename) throws IOException {
+		//we used this method inside listenser class so this driver is not initialized properly
+		//driver in after and before method initialized since it running before and after for every test method
+		TakesScreenshot ts= (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\reports\\"+testcasename+".png"));
+		return System.getProperty("user.dir")+"\\reports\\"+testcasename+".png";
 	}
 
 	public List<HashMap<String, String>> getJsonDatatoMap(String filepath) throws IOException {

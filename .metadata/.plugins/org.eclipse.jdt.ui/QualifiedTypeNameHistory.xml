@@ -34,7 +34,6 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
-    <fullyQualifiedTypeName name="SeleniumRealtime.Testcomponents.BaseTest"/>
     <fullyQualifiedTypeName name="SeleniumRealtime.pageobjects.Landingpage"/>
     <fullyQualifiedTypeName name="SeleniumRealtime.pageobjects.Order_Page"/>
     <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentTest"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
+    <fullyQualifiedTypeName name="SeleniumRealtime.Testcomponents.BaseTest"/>
 </qualifiedTypeNameHistroy>

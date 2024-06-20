@@ -134,13 +134,6 @@ public class Standalone_convertTest extends BaseTest {
 		Assert.assertTrue(orderProductName);
 
 	}
-	
-	public String getScreenShot(String testcasename) throws IOException {
-		TakesScreenshot ts= (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\reports\\"+testcasename+".png"));
-		return System.getProperty("user.dir")+"\\reports\\"+testcasename+".png";
-	}
 
 //	@DataProvider//helps to drive the data and pass multiple data sets
 //	public Object[][] getdata()

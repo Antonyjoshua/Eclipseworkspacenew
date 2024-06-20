@@ -1,5 +1,7 @@
 package SeleniumRealtime.Testcomponents;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -10,8 +12,9 @@ import com.aventstack.extentreports.Status;
 
 import SeleniumRealtime.resources.Extent_Report_TestNG;
 
-public class Listensers implements ITestListener {
+public class Listensers extends BaseTest implements ITestListener {
 	// classname.methodname to call the static method without creating object
+	//calling  getReportObject() here to access the extent reports
 	ExtentReports report = Extent_Report_TestNG.getReportObject();
 	ExtentTest test;
 
@@ -20,6 +23,7 @@ public class Listensers implements ITestListener {
 	// the test method, so
 	// before running any test this block will gets executed
 	public void onTestStart(ITestResult result) {
+		//Invoked each time before a test will be invoked
 		// this will get the methodname of the testmethod before executing them
 		// ExtentTest createTest = report.createTest("Extent report demo");
 		test = report.createTest(result.getMethod().getMethodName());
@@ -36,9 +40,17 @@ public class Listensers implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.log(Status.FAIL, "Test Failed");
+		//test.log(Status.FAIL, "Test Failed");
 		// this will display the error message in the output
 		test.fail(result.getThrowable());
+		String screenShot = null ;
+		try {
+			screenShot = getScreenShot(result.getMethod().getMethodName());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.addScreenCaptureFromPath(screenShot, result.getMethod().getMethodName());
 	}
 
 	@Override
@@ -67,8 +79,8 @@ public class Listensers implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+		// this method gets executed after executing all the test cases
+		 report.flush();
 	}
 
 }
