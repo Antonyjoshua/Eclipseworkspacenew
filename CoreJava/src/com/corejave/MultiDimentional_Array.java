@@ -1,7 +1,5 @@
 package com.corejave;
 
-import java.util.Iterator;
-
 public class MultiDimentional_Array {
 
 	public static void main(String[] args) {

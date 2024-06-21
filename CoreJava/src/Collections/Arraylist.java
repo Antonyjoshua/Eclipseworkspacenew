@@ -1,7 +1,6 @@
 package Collections;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Arraylist {
 

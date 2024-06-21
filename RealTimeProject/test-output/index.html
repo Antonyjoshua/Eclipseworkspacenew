@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Realtime" class="navigator-link">
-              <span class="suite-name border-passed">Realtime</span>
+              <span class="suite-name border-failed">Realtime</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Realtime" class="hide-methods failed suite-Realtime"> (hide)</a> <!-- hide-methods failed suite-Realtime -->
+                      <a href="#" panel-name="suite-Realtime" class="show-methods failed suite-Realtime"> (show)</a> <!-- show-methods failed suite-Realtime -->
+                    </span>
+                    <div class="method-list-content failed suite-Realtime">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Realtime" title="SeleniumRealtime.testcases.Error_Validation_Test" class="method navigator-link" hash-for-method="logininvalid_Credencial">logininvalid_Credencial</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Realtime -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +115,6 @@
                       <a href="#" panel-name="suite-Realtime" class="show-methods passed suite-Realtime"> (show)</a> <!-- show-methods passed suite-Realtime -->
                     </span>
                     <div class="method-list-content passed suite-Realtime">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Realtime" title="SeleniumRealtime.testcases.Error_Validation_Test" class="method navigator-link" hash-for-method="logininvalid_Credencial">logininvalid_Credencial</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Realtime" title="SeleniumRealtime.testcases.Standalone_convertTest" class="method navigator-link" hash-for-method="orderHistoryTest">orderHistoryTest</a> <!-- method navigator-link -->
@@ -138,6 +147,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Realtime" class="panel Realtime">
+          <div class="suite-Realtime-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">SeleniumRealtime.testcases.Error_Validation_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logininvalid_Credencial">
+                  </a> <!-- logininvalid_Credencial -->
+                  <span class="method-name">logininvalid_Credencial</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+	at SeleniumRealtime.testcases.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Realtime-class-failed -->
           <div class="suite-Realtime-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -175,13 +208,6 @@
               <span class="class-name">SeleniumRealtime.testcases.Error_Validation_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="logininvalid_Credencial">
-                  </a> <!-- logininvalid_Credencial -->
-                  <span class="method-name">logininvalid_Credencial</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="productErrorValidation">
@@ -278,28 +304,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'purchaseOrder')
 data.setCell(0, 2, 'SeleniumRealtime.testcases.Standalone_convertTest')
-data.setCell(0, 3, 16414);
+data.setCell(0, 3, 15871);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'purchaseOrder')
 data.setCell(1, 2, 'SeleniumRealtime.testcases.Standalone_convertTest')
-data.setCell(1, 3, 15073);
+data.setCell(1, 3, 15656);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'productErrorValidation')
 data.setCell(2, 2, 'SeleniumRealtime.testcases.Error_Validation_Test')
-data.setCell(2, 3, 14507);
+data.setCell(2, 3, 14623);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'logininvalid_Credencial')
-data.setCell(3, 2, 'SeleniumRealtime.testcases.Error_Validation_Test')
-data.setCell(3, 3, 1398);
+data.setCell(3, 1, 'orderHistoryTest')
+data.setCell(3, 2, 'SeleniumRealtime.testcases.Standalone_convertTest')
+data.setCell(3, 3, 1057);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'orderHistoryTest')
-data.setCell(4, 2, 'SeleniumRealtime.testcases.Standalone_convertTest')
-data.setCell(4, 3, 973);
+data.setCell(4, 1, 'logininvalid_Credencial')
+data.setCell(4, 2, 'SeleniumRealtime.testcases.Error_Validation_Test')
+data.setCell(4, 3, 1029);
 window.suiteTableData['Realtime']= { tableData: data, tableDiv: 'times-div-Realtime'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Realtime">
               </div> <!-- times-div-Realtime -->
             </div> <!-- times-div -->
@@ -335,77 +361,73 @@ return data;
               <div class="chronological-class-name">SeleniumRealtime.testcases.Standalone_convertTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launching_App</span>
-                <span class="method-start">464 ms</span>
+                <span class="method-start">426 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">SeleniumRealtime.testcases.Error_Validation_Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">logininvalid_Credencial</span>
-                <span class="method-start">5982 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">SeleniumRealtime.testcases.Standalone_convertTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">purchaseOrder({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com})</span>
-                <span class="method-start">6196 ms</span>
+                <span class="method-start">10466 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumRealtime.testcases.Error_Validation_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logininvalid_Credencial</span>
+                <span class="method-start">11105 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">7395 ms</span>
+                <span class="method-start">12744 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launching_App</span>
-                <span class="method-start">8044 ms</span>
+                <span class="method-start">13152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productErrorValidation</span>
-                <span class="method-start">12118 ms</span>
+                <span class="method-start">18274 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumRealtime.testcases.Standalone_convertTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">22614 ms</span>
+                <span class="method-start">26341 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launching_App</span>
-                <span class="method-start">23351 ms</span>
+                <span class="method-start">26889 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})</span>
+                <span class="method-start">31292 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumRealtime.testcases.Error_Validation_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">26628 ms</span>
+                <span class="method-start">32903 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumRealtime.testcases.Standalone_convertTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})</span>
-                <span class="method-start">28979 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">44066 ms</span>
+                <span class="method-start">46951 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launching_App</span>
-                <span class="method-start">44319 ms</span>
+                <span class="method-start">47145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">orderHistoryTest</span>
-                <span class="method-start">50781 ms</span>
+                <span class="method-start">51942 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">51755 ms</span>
+                <span class="method-start">53001 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

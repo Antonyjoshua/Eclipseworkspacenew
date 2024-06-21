@@ -62,7 +62,7 @@ public class BaseTest // this class will hold all the reusable content related t
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		return driver; //- this method will work without returning the driver
+		return driver; // - this method will work without returning the driver
 
 	}
 
@@ -75,8 +75,8 @@ public class BaseTest // this class will hold all the reusable content related t
 	// testmethods
 	@BeforeMethod(alwaysRun = true)
 	public void launching_App() throws IOException {
-		//initialize_Driver();//- we can just use call the method it will work
-		driver= initialize_Driver(); //this method call the respective browser
+		// initialize_Driver();//- we can just use call the method it will work
+		driver = initialize_Driver(); // this method call the respective browser
 		lp = new Landingpage(driver);// passing driver to the landing page constructor
 		lp.url("https://rahulshettyacademy.com/client");
 		// return lp- return the landingpage instance if you want to call this method in
@@ -88,18 +88,26 @@ public class BaseTest // this class will hold all the reusable content related t
 		driver.close();
 
 	}
-	public String getScreenShot(String testcasename) throws IOException {
-		//we used this method inside listenser class so this driver is not initialized properly
-		//driver in after and before method initialized since it running before and after for every test method
-		TakesScreenshot ts= (TakesScreenshot) driver;
+
+	public String getScreenShot(String testcasename, WebDriver driver) throws IOException {
+		// we used this method inside listenser class so this driver is not initialized
+		// properly
+		// driver in after and before method initialized since it running before and
+		// after for every test method
+		// casts the driver object to the TakesScreenshot interface.
+		TakesScreenshot ts = (TakesScreenshot) driver; // this driver have no life since driver is not passing to this
+														// driver through any test case like in before and after method.
+														// Driver will get life after passing the webdriver driver from
+														// the listensers for screenshot
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\reports\\"+testcasename+".png"));
-		return System.getProperty("user.dir")+"\\reports\\"+testcasename+".png";
+		FileUtils.copyFile(source, new File(System.getProperty("user.dir") + "\\reports\\" + testcasename + ".png"));
+		return System.getProperty("user.dir") + "\\reports\\" + testcasename + ".png";
 	}
 
 	public List<HashMap<String, String>> getJsonDatatoMap(String filepath) throws IOException {
 		// read json to string
-		//fileutils- Utility that scans the json or any file and create hashmap out of it
+		// fileutils- Utility that scans the json or any file and create hashmap out of
+		// it
 		// filepath- path of the json file, we sending this as an argument to make this
 		// method as generic, so that any json file can run this method
 		String readFileToString = FileUtils.readFileToString(new File(filepath), StandardCharsets.UTF_8);

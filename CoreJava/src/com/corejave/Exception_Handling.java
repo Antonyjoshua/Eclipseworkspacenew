@@ -1,7 +1,5 @@
 package com.corejave;
 
-import java.util.ArrayList;
-
 public class Exception_Handling {
 
 	public static void main(String[] args) {

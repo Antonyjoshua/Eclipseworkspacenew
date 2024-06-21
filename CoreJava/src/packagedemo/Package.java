@@ -1,6 +1,5 @@
 package packagedemo;
 
-import com.corejave.AccessModifier;
 import com.corejave.Final;
 import com.corejave.Finalchild;
 

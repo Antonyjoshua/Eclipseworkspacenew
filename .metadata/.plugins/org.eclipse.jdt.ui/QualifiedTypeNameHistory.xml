@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.util.Hashtable"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="Collections.Practice"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
-    <fullyQualifiedTypeName name="org.testng.asserts.SoftAssert"/>
     <fullyQualifiedTypeName name="testng.com.Inheritance_1"/>
     <fullyQualifiedTypeName name="testng.com.Inheritance_2"/>
     <fullyQualifiedTypeName name="testng.com.Super_Inherit"/>
@@ -49,15 +39,25 @@
     <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
     <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.ExtentSparkReporter"/>
     <fullyQualifiedTypeName name="org.testng.ITestListener"/>
-    <fullyQualifiedTypeName name="SeleniumRealtime.resources.Extent_Report_TestNG"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentTest"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
     <fullyQualifiedTypeName name="SeleniumRealtime.Testcomponents.BaseTest"/>
+    <fullyQualifiedTypeName name="framework.abstractcomponents.AbstractComponents"/>
+    <fullyQualifiedTypeName name="framework.pageobjects.Checkout_page"/>
+    <fullyQualifiedTypeName name="framework.pageobjects.Confirmation_Page"/>
+    <fullyQualifiedTypeName name="framework.Testcomponents.BaseTest"/>
+    <fullyQualifiedTypeName name="framework.pageobjects.Product_catalogue"/>
+    <fullyQualifiedTypeName name="framework.pageobjects.Cart_Page"/>
+    <fullyQualifiedTypeName name="framework.pageobjects.Order_Page"/>
+    <fullyQualifiedTypeName name="framework.pageobjects.Landingpage"/>
+    <fullyQualifiedTypeName name="framework.resources.Extent_Report_TestNG"/>
+    <fullyQualifiedTypeName name="SeleniumRealtime.resources.Extent_Report_TestNG"/>
+    <fullyQualifiedTypeName name="com.corejave.Abstract"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 </qualifiedTypeNameHistroy>

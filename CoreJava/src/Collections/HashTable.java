@@ -4,11 +4,6 @@ import java.util.Collection;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
 public class HashTable {
 
 	public static void main(String[] args) {
