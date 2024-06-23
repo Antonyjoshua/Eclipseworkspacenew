@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- For a eash test folder a browser gets opened at the same time, if we use parallel  -->
+<suite name="Realtime" >
+	<listeners>
+		<listener class-name="framework.Testcomponents.Listensers"></listener>
+	</listeners>
+	<!-- in TestNG, each <test> element within the test suite XML file should have a unique name.  -->
+ <!-- thread count- Maximum it will allow 5 test methods to run parallely in the jave class file  -->
+ 
+
+  <test thread-count="5" name="Errorvalidation">
+    <classes>
+     <class name="framework.Testcase.Error_Validation_Test"/>
+    </classes>
+  </test> <!-- Test -->
+   
+</suite> <!-- Suite -->

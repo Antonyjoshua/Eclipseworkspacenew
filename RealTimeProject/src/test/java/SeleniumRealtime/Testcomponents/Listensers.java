@@ -20,7 +20,8 @@ public class Listensers extends BaseTest implements ITestListener {
 	ExtentReports report = Extent_Report_TestNG.getReportObject(); // Use the class name to call static methods in your
 																	// test or page classes.
 	ExtentTest test;
-
+	
+	ThreadLocal<ExtentTest> extenttest= new ThreadLocal<ExtentTest>();
 	@Override
 	// Writing create test here since it's object is mandatory to get the data from
 	// the test method, so
@@ -32,7 +33,8 @@ public class Listensers extends BaseTest implements ITestListener {
 		// ExtentTest createTest = report.createTest("Extent report demo");
 		// createTest: This is a method of the ExtentReports class used to create a new
 		// test in the report.
-		test = report.createTest(result.getMethod().getMethodName());
+	     test = report.createTest(result.getMethod().getMethodName());
+	     extenttest.set(test);
 		// the test variable holds a reference to the ExtentTest instance. This instance
 		// can be used to log various details about the test, such as steps, status
 		// updates, screenshots, and other relevant information.
@@ -43,7 +45,8 @@ public class Listensers extends BaseTest implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.log(Status.PASS, "Test Passed");
+		//test.log(Status.PASS, "Test Passed");
+		extenttest.get().log(Status.PASS, "Test Passed");
 	}
 
 	@Override
@@ -51,14 +54,16 @@ public class Listensers extends BaseTest implements ITestListener {
 		// TODO Auto-generated method stub
 		// test.log(Status.FAIL, "Test Failed");
 		// this will display the error message in the output
-		test.fail(result.getThrowable());
+		//test.fail(result.getThrowable());
+		extenttest.get().fail(result.getThrowable());
 
 		try {
 			// result will have the driver details since it contains data of the test case
 			// using result we are calling gettestclass method, it will go the xml file, in
 			// the test folder it will take the class
 			// when we say getrealclass, we will go the real class, from there it will get
-			// the field driver. We are going class level, since field(driver) is in class level
+			// the field driver. We are going class level, since field(driver) is in class
+			// level
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e) // used exception class instead of using multiple catch since expection is the
 								// pareant class for all the exception
@@ -68,7 +73,8 @@ public class Listensers extends BaseTest implements ITestListener {
 
 		String screenShot = null;
 		try {
-			//driver gets life from the above script that driver is passed to the get screenshot method
+			// driver gets life from the above script that driver is passed to the get
+			// screenshot method
 			screenShot = getScreenShot(result.getMethod().getMethodName(), driver);// we extends basetest class to this
 																					// method
 			// to call this method
@@ -76,8 +82,10 @@ public class Listensers extends BaseTest implements ITestListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(screenShot, result.getMethod().getMethodName());
+		extenttest.get().addScreenCaptureFromPath(screenShot, result.getMethod().getMethodName());
+		//test.addScreenCaptureFromPath(screenShot, result.getMethod().getMethodName());
 	}
+	
 
 	@Override
 	public void onTestSkipped(ITestResult result) {

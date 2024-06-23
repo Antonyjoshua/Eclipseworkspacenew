@@ -5,6 +5,7 @@
     <classes>
       <class name="framework.Testcase.Error_Validation_Test">
         <methods>
+          <include name="productErrorValidation"/>
           <include name="logininvalid_Credencial"/>
           <include name="close"/>
           <include name="launching_App"/>

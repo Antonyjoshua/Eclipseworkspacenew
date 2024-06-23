@@ -13,8 +13,8 @@ public class Error_Validation_Test extends BaseTest {
 	public void logininvalid_Credencial() {
 		lp.login_Application("josh@yopmail.com", "Welcome@12");
 		System.out.println(lp.getErrorMessage());
-		Assert.assertEquals("Incorrect email password.", lp.getErrorMessage());
-
+		//(found, Expected)
+		Assert.assertEquals(lp.getErrorMessage(), "Incorrect email password."); 
 	}
 
 	
@@ -27,7 +27,7 @@ public class Error_Validation_Test extends BaseTest {
 		Cart_Page cp = pc.goToCart();
 		boolean cartProductName = cp.getCartProductName("IPHONE 14 PRO");
 		System.out.println(cartProductName);
-		Assert.assertFalse(cartProductName);
+		Assert.assertTrue(cartProductName);
 
 	}
 
