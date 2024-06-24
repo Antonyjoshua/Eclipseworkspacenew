@@ -7,11 +7,12 @@ import org.testng.Assert;
 
 import org.testng.annotations.Test;
 import SeleniumRealtime.Testcomponents.BaseTest;
+import SeleniumRealtime.Testcomponents.Retry;
 import SeleniumRealtime.pageobjects.Cart_Page;
 import SeleniumRealtime.pageobjects.Product_catalogue;
 
 public class Error_Validation_Test extends BaseTest {
-	@Test(groups = "Errorvalidation")
+	@Test(groups = "Errorvalidation", retryAnalyzer = Retry.class)
 	public void logininvalid_Credencial() {
 		 lp.login_Application("josh@yopmail.com", "Welcome@12");
 		 System.out.println(lp.getErrorMessage());
@@ -19,7 +20,7 @@ public class Error_Validation_Test extends BaseTest {
 
 	}
 	//Checking wrong product
-	@Test
+	@Test 
 	public void productErrorValidation() {
 		String productname = "IPHONE 13 PRO";
 		Product_catalogue pc = lp.login_Application("josh@yopmail.com", "Welcome@123");
