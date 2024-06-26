@@ -2,6 +2,7 @@ package framework.Testcomponents;
 
 import java.io.IOException;
 
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -30,6 +31,7 @@ public class Listensers extends BaseTest implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		extenttest.get().log(Status.PASS, "Test Passed");
+		extenttest.get().pass(result.getThrowable());
 	}
 
 	@Override
@@ -55,7 +57,8 @@ public class Listensers extends BaseTest implements ITestListener {
 	@Override
 	public void onTestSkipped(ITestResult result) {
 
-		ITestListener.super.onTestSkipped(result);
+		extenttest.get().log(Status.SKIP, "Method got skipped");
+	
 	}
 
 	@Override

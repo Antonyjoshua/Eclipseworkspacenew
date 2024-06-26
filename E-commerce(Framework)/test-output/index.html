@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Realtime" class="navigator-link ">
-                    <span>C:\Users\ACW USER\eclipse-workspace\E-commerce(Framework)\testsuites\Extentreport_Errvalid.xml</span>
+                    <span>C:\Users\ACW USER\eclipse-workspace\E-commerce(Framework)\testsuites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Realtime" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Realtime" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">7 methods, 2 failed,  2 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -112,6 +112,49 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Realtime -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Realtime" class="hide-methods skipped suite-Realtime"> (hide)</a> <!-- hide-methods skipped suite-Realtime -->
+                      <a href="#" panel-name="suite-Realtime" class="show-methods skipped suite-Realtime"> (show)</a> <!-- show-methods skipped suite-Realtime -->
+                    </span>
+                    <div class="method-list-content skipped suite-Realtime">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Realtime" title="framework.Testcase.Error_Validation_Test" class="method navigator-link" hash-for-method="logininvalid_Credencial">logininvalid_Credencial</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Realtime" title="framework.Testcase.Error_Validation_Test" class="method navigator-link" hash-for-method="productErrorValidation">productErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Realtime -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Realtime" class="hide-methods passed suite-Realtime"> (hide)</a> <!-- hide-methods passed suite-Realtime -->
+                      <a href="#" panel-name="suite-Realtime" class="show-methods passed suite-Realtime"> (show)</a> <!-- show-methods passed suite-Realtime -->
+                    </span>
+                    <div class="method-list-content passed suite-Realtime">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Realtime" title="framework.Testcase.PurchaseOrder" class="method navigator-link" hash-for-method="orderHistoryTest">orderHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Realtime" title="framework.Testcase.PurchaseOrder" class="method navigator-link" hash-for-method="purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})">purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Realtime" title="framework.Testcase.PurchaseOrder" class="method navigator-link" hash-for-method="purchaseOrder({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com})">purchaseOrder({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Realtime -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,9 +178,13 @@
                   </a> <!-- logininvalid_Credencial -->
                   <span class="method-name">logininvalid_Credencial</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-	at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:17)
+	at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -147,28 +194,108 @@
                   </a> <!-- productErrorValidation -->
                   <span class="method-name">productErrorValidation</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:30)
+	at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Realtime-class-failed -->
+          <div class="suite-Realtime-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">framework.Testcase.Error_Validation_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logininvalid_Credencial">
+                  </a> <!-- logininvalid_Credencial -->
+                  <span class="method-name">logininvalid_Credencial</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
+	at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productErrorValidation">
+                  </a> <!-- productErrorValidation -->
+                  <span class="method-name">productErrorValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Realtime-class-skipped -->
+          <div class="suite-Realtime-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">framework.Testcase.PurchaseOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderHistoryTest">
+                  </a> <!-- orderHistoryTest -->
+                  <span class="method-name">orderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})">
+                  </a> <!-- purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com}) -->
+                  <span class="method-name">purchaseOrder</span>
+                  <span class="parameters">({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseOrder({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com})">
+                  </a> <!-- purchaseOrder({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com}) -->
+                  <span class="method-name">purchaseOrder</span>
+                  <span class="parameters">({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Realtime-class-passed -->
         </div> <!-- panel Realtime -->
         <div panel-name="test-xml-Realtime" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ACW USER\eclipse-workspace\E-commerce(Framework)\testsuites\Extentreport_Errvalid.xml</span>
+            <span class="header-content">C:\Users\ACW USER\eclipse-workspace\E-commerce(Framework)\testsuites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Realtime&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Realtime&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;framework.Testcomponents.Listensers&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Errorvalidation&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;PurchaseOrder&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;framework.Testcase.PurchaseOrder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PurchaseOrder --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Errorvalidation&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.Testcase.Error_Validation_Test&quot;/&gt;
     &lt;/classes&gt;
@@ -183,6 +310,9 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
+              <li>
+                <span class="test-name">PurchaseOrder (1 class)</span>
+              </li>
               <li>
                 <span class="test-name">Errorvalidation (1 class)</span>
               </li>
@@ -199,6 +329,18 @@
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">logininvalid_Credencial</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">purchaseOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">multipledata</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">purchaseOrder</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -218,20 +360,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'productErrorValidation')
 data.setCell(0, 2, 'framework.Testcase.Error_Validation_Test')
-data.setCell(0, 3, 2901);
+data.setCell(0, 3, 24544);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logininvalid_Credencial')
-data.setCell(1, 2, 'framework.Testcase.Error_Validation_Test')
-data.setCell(1, 3, 775);
+data.setCell(1, 1, 'purchaseOrder')
+data.setCell(1, 2, 'framework.Testcase.PurchaseOrder')
+data.setCell(1, 3, 15426);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'productErrorValidation')
+data.setCell(2, 2, 'framework.Testcase.Error_Validation_Test')
+data.setCell(2, 3, 14825);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'purchaseOrder')
+data.setCell(3, 2, 'framework.Testcase.PurchaseOrder')
+data.setCell(3, 3, 4743);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'logininvalid_Credencial')
+data.setCell(4, 2, 'framework.Testcase.Error_Validation_Test')
+data.setCell(4, 3, 1449);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'orderHistoryTest')
+data.setCell(5, 2, 'framework.Testcase.PurchaseOrder')
+data.setCell(5, 3, 1119);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'logininvalid_Credencial')
+data.setCell(6, 2, 'framework.Testcase.Error_Validation_Test')
+data.setCell(6, 3, 1112);
 window.suiteTableData['Realtime']= { tableData: data, tableDiv: 'times-div-Realtime'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Realtime">
               </div> <!-- times-div-Realtime -->
             </div> <!-- times-div -->
@@ -262,29 +424,107 @@ return data;
                 <span class="method-name">launching_App</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.Testcase.PurchaseOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launching_App</span>
+                <span class="method-start">449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">purchaseOrder({productname=IPHONE 13 PRO, password=Welcome@123, email=antony@yopmail.com})</span>
+                <span class="method-start">5503 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.Testcase.Error_Validation_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logininvalid_Credencial</span>
+                <span class="method-start">9206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">10682 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launching_App</span>
+                <span class="method-start">10899 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logininvalid_Credencial</span>
-                <span class="method-start">3960 ms</span>
+                <span class="method-start">18204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">5026 ms</span>
+                <span class="method-start">19912 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launching_App</span>
-                <span class="method-start">5269 ms</span>
+                <span class="method-start">20183 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.Testcase.PurchaseOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">20933 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launching_App</span>
+                <span class="method-start">21130 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.Testcase.Error_Validation_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productErrorValidation</span>
+                <span class="method-start">26149 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.Testcase.PurchaseOrder</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">purchaseOrder({productname=ADIDAS ORIGINAL, password=Welcome@123, email=josh@yopmail.com})</span>
+                <span class="method-start">27833 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">32579 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launching_App</span>
+                <span class="method-start">32766 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orderHistoryTest</span>
+                <span class="method-start">38772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">39893 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">framework.Testcase.Error_Validation_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">50697 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launching_App</span>
+                <span class="method-start">50858 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">productErrorValidation</span>
-                <span class="method-start">10081 ms</span>
+                <span class="method-start">55465 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">13231 ms</span>
+                <span class="method-start">70544 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
