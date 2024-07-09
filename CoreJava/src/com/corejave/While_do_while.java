@@ -25,6 +25,16 @@ public class While_do_while {
 			j++;
 		//	System.out.println(j);//j=2
 		}while(j<10);
+		 int o = 1;
+	        while (o < 5) { // The loop will continue until i is not less than 5
+	            System.out.println(o);
+	            //! negation convert the true to false, false to true
+	            if (!(o == 3)) {
+	                // Print a message only if i is not equal to 3
+	                System.out.println(o+" is not 3");
+	            }
+	            o++;
+	        }
 	}
 
 }

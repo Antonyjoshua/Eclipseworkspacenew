@@ -119,8 +119,12 @@ public class Standalone_convertTest extends BaseTest {
 
 	}
 
-	@Test(dependsOnMethods = { "purchaseOrder" }) // first convertedcode method will gets executed. If that method
-													// fails, then this method will get skipped
+	@Test(dependsOnMethods = { "purchaseOrder" }, groups = "Errorvalidation") // If we want to run this method while
+																				// running a group, the name should be
+																				// added to that method also to execute
+																				// with the depended test method
+	// first convertedcode method will gets executed. If that method fails, then
+	// this method will get skipped
 	// this method is about logging into the application and checking the order
 	// placed product in the order page
 	// for every test method we need to login into the application
@@ -172,11 +176,12 @@ public class Standalone_convertTest extends BaseTest {
 		// Reading data from the json and creat list of hashmap out of it
 		// create a json file with data
 		// create a method in basetest class which read the json data and convert into
-		// string, then the string is converted into list of hashmap using object mapper class
+		// string, then the string is converted into list of hashmap using object mapper
+		// class
 		List<HashMap<String, String>> jsonDatatoMap = getJsonDatatoMap(System.getProperty("user.dir")
 				+ "\\src\\test\\java\\SeleniumRealtime\\Testcomponents\\PassingDataToPurchaseOrder.json");
 		// return new Object[][] { {map},{map1} };
-		//sending two data set, each time the test method will run
+		// sending two data set, each time the test method will run
 		return new Object[][] { { jsonDatatoMap.get(0) }, { jsonDatatoMap.get(1) } };
 
 	}

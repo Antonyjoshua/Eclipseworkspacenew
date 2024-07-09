@@ -1,7 +1,7 @@
 package com.corejave;
 
 public class Variables {
-	String name; // Instance variable - Variable which is declared after class and outside the
+	String name= "Antony"; // Instance variable - Variable which is declared after class and outside the
 					 // method, constructor
 	String address;
 	static String city = "Chennai";// All static variables are global or class variables, remaining variable which
@@ -44,7 +44,7 @@ public class Variables {
 	}
 
 	public static void main(String[] args) {
-		Variables v = new Variables("Antony", "Poonamallee");
+		Variables v = new Variables("Hope", "Poonamallee");
 		Variables v1 = new Variables("Joshua", "Poonamallee");
 		v.getdata();
 		v1.getdata();

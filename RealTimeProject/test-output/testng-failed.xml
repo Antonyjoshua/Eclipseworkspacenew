@@ -5,6 +5,11 @@
     <listener class-name="SeleniumRealtime.Testcomponents.Listensers"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Errorvalidation(failed)">
+    <groups>
+      <run>
+        <include name="Errorvalidation"/>
+      </run>
+    </groups>
     <classes>
       <class name="SeleniumRealtime.testcases.Error_Validation_Test">
         <methods>

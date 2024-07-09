@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
-public class Standalonetest {
+public class StandaloneTest {
 
 	public static void main(String[] args) {
 		String productname = "IPHONE 13 PRO";

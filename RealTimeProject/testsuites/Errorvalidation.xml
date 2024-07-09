@@ -4,11 +4,15 @@
 <suite name="Realtime" parallel="tests" >
 	<!-- in TestNG, each <test> element within the test suite XML file should have a unique name.  -->
  <!-- thread count- Maximum it will allow 5 test methods to run parallely in the jave class file  -->
+ 
  <groups>
 	 <run>
 		 <include name="Errorvalidation"></include>
 	 </run>
  </groups>
+ <listeners>
+		<listener class-name="SeleniumRealtime.Testcomponents.Listensers"></listener>
+	</listeners>
  
   <test thread-count="5" name="Convertedcode" >
     <classes>

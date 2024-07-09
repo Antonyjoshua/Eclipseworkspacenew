@@ -18,6 +18,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -50,14 +51,21 @@ public class BaseTest // this class will hold all the reusable content related t
 //				"C:\\Users\\ACW USER\\eclipse-workspace\\RealTimeProject\\src\\main\\java\\SeleniumRealtime\\resources\\Globaldata.properties");
 
 		prop.load(fis);
+		// We can allow pass the data from the maven command as a global variable
+		// To do that we need to use ternary operation- Java ternary operator is the
+		// only conditional operator that takes three operands.
+		// when we use this command mvn test -Dbrowser= FireFox, condition becomes true
+		// and it will use the first condition
+		String browsername = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
 		// getting the value in the global property
-		String browsername = prop.getProperty("browser");
+		// String browsername = prop.getProperty("browser");
 		if (browsername.equals("Edge")) {
 			driver = new EdgeDriver();
 		} else if (browsername.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browsername.equals("firefox")) {
-			// firefox
+			driver = new FirefoxDriver();
 		}
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
