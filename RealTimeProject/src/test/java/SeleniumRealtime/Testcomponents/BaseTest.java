@@ -17,6 +17,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.ChromiumOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -61,8 +63,17 @@ public class BaseTest // this class will hold all the reusable content related t
 		// getting the value in the global property
 		// String browsername = prop.getProperty("browser");
 		if (browsername.equals("Edge")) {
+			
 			driver = new EdgeDriver();
 		} else if (browsername.equals("chrome")) {
+			// running the test in headless mode- browser won't open while executing instead
+						// it will run in background
+			      //    ChromeOptions options= new ChromeOptions();
+//			          if(browsername.contains("headless"))
+//			          {
+//			        	  options.addArguments("headless");
+//			          }
+			//driver = new ChromeDriver(options);
 			driver = new ChromeDriver();
 		} else if (browsername.equals("firefox")) {
 			driver = new FirefoxDriver();
