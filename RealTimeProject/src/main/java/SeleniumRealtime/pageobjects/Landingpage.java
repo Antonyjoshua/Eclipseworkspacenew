@@ -39,13 +39,16 @@ public class Landingpage extends AbstractComponents {// ctrl+click= to view the 
 	// PageFactory.initElements(driver, this);- this method will initialize and
 	// trigger all the page elements even we didn't say the script the driver
 	@FindBy(id = "userEmail")
-	WebElement userEmail;
+	private WebElement userEmail;
 
 	@FindBy(id = "userPassword")
-	WebElement userPassword;
+	private WebElement userPassword;
 
 	@FindBy(id = "login")
-	WebElement submit;
+	// We are achieving the encapsulation by hiding the webelement by making it has
+	// private and exposing the action methods by making it has public bcoz we
+	// cannot call webelement directly into another class
+	private WebElement submit;
 
 	// Action method-These methods represent actions that a user can perform on the
 	// web page, such as clicking buttons, entering text, selecting options, etc. By
@@ -66,13 +69,13 @@ public class Landingpage extends AbstractComponents {// ctrl+click= to view the 
 		return pc;
 
 	}
-	//.ng-tns-c4-17.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error
-	////div[contains(@class,'toast-error')]
+
+	// .ng-tns-c4-17.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error
+	//// div[contains(@class,'toast-error')]
 	@FindBy(xpath = "//div[contains(@class,'toast-error')]")
 	WebElement errorMessage;
-	
-	public String getErrorMessage()
-	{
+
+	public String getErrorMessage() {
 		waitForWebElementToAppear(errorMessage);
 		return errorMessage.getText();
 	}

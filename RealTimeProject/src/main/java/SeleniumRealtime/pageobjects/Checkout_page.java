@@ -41,8 +41,8 @@ public class Checkout_page extends AbstractComponents {
 		dd.sendKeys(Keys.ENTER);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", placeorder);
-		Confirmation_Page cfp= new Confirmation_Page(driver);
-		return cfp;
+		//Confirmation_Page cfp= new Confirmation_Page(driver);
+		return  new Confirmation_Page(driver);
 
 	}
 
