@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-12T11:01:52 IST" name="Default suite" finished-at="2024-08-12T11:02:19 IST" duration-ms="27812">
+    <groups>
+    </groups>
+    <test started-at="2024-08-12T11:01:52 IST" name="Default test" finished-at="2024-08-12T11:02:19 IST" duration-ms="27812">
+      <class name="SeleniumRealtime.testcases.CreateAccountTest">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.CreateAccountTest@4145bad8]" started-at="2024-08-12T11:01:52 IST" name="launching_App" finished-at="2024-08-12T11:02:02 IST" duration-ms="10430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching_App -->
+        <test-method signature="createaccount()[pri:0, instance:SeleniumRealtime.testcases.CreateAccountTest@4145bad8]" started-at="2024-08-12T11:02:02 IST" name="createaccount" finished-at="2024-08-12T11:02:19 IST" duration-ms="16934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createaccount -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.CreateAccountTest@4145bad8]" started-at="2024-08-12T11:02:19 IST" name="close" finished-at="2024-08-12T11:02:19 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumRealtime.testcases.CreateAccountTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

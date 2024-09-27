@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="9" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-27T01:16:48 IST" name="Realtime" finished-at="2024-06-27T01:17:59 IST" duration-ms="70762">
+  <suite started-at="2024-09-02T11:30:30 IST" name="Default suite" finished-at="2024-09-02T11:31:18 IST" duration-ms="48041">
     <groups>
       <group name="Errorvalidation">
-        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
-        <method signature="Error_Validation_Test.logininvalid_Credencial()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" name="logininvalid_Credencial" class="framework.Testcase.Error_Validation_Test"/>
+        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
       </group> <!-- Errorvalidation -->
       <group name="multipledata">
-        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
+        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
       </group> <!-- multipledata -->
     </groups>
-    <test started-at="2024-06-27T01:16:48 IST" name="PurchaseOrder" finished-at="2024-06-27T01:17:29 IST" duration-ms="40239">
+    <test started-at="2024-09-02T11:30:30 IST" name="Default test" finished-at="2024-09-02T11:31:18 IST" duration-ms="48041">
       <class name="framework.Testcase.PurchaseOrder">
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:16:49 IST" name="launching_App" finished-at="2024-06-27T01:16:54 IST" duration-ms="5052" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:30:31 IST" name="launching_App" finished-at="2024-09-02T11:30:37 IST" duration-ms="6547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:16:54 IST" name="purchaseOrder" data-provider="getdata" finished-at="2024-06-27T01:17:09 IST" duration-ms="15426" status="PASS">
+        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:30:37 IST" name="purchaseOrder" data-provider="getdata" finished-at="2024-09-02T11:30:54 IST" duration-ms="16672" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,15 +28,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseOrder -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:09 IST" name="close" finished-at="2024-06-27T01:17:10 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:30:54 IST" name="close" finished-at="2024-09-02T11:30:55 IST" duration-ms="909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:10 IST" name="launching_App" finished-at="2024-06-27T01:17:16 IST" duration-ms="6703" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:30:55 IST" name="launching_App" finished-at="2024-09-02T11:30:58 IST" duration-ms="3149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:16 IST" name="purchaseOrder" data-provider="getdata" finished-at="2024-06-27T01:17:21 IST" duration-ms="4743" status="PASS">
+        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:30:58 IST" name="purchaseOrder" data-provider="getdata" finished-at="2024-09-02T11:31:13 IST" duration-ms="15222" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,223 +47,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseOrder -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:21 IST" name="close" finished-at="2024-06-27T01:17:21 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:31:13 IST" name="close" finished-at="2024-09-02T11:31:13 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:21 IST" name="launching_App" finished-at="2024-06-27T01:17:27 IST" duration-ms="6005" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:31:13 IST" name="launching_App" finished-at="2024-09-02T11:31:17 IST" duration-ms="3350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="orderHistoryTest()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:27 IST" name="orderHistoryTest" finished-at="2024-06-27T01:17:28 IST" depends-on-methods="framework.Testcase.PurchaseOrder.purchaseOrder" duration-ms="1119" status="PASS">
+        <test-method signature="orderHistoryTest()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:31:17 IST" name="orderHistoryTest" finished-at="2024-09-02T11:31:18 IST" depends-on-methods="framework.Testcase.PurchaseOrder.purchaseOrder" duration-ms="1164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistoryTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@6dab9b6d]" started-at="2024-06-27T01:17:28 IST" name="close" finished-at="2024-06-27T01:17:29 IST" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@6892b3b6]" started-at="2024-09-02T11:31:18 IST" name="close" finished-at="2024-09-02T11:31:18 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- framework.Testcase.PurchaseOrder -->
-    </test> <!-- PurchaseOrder -->
-    <test started-at="2024-06-27T01:16:48 IST" name="Errorvalidation" finished-at="2024-06-27T01:17:59 IST" duration-ms="70762">
-      <class name="framework.Testcase.Error_Validation_Test">
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:16:48 IST" name="launching_App" finished-at="2024-06-27T01:16:58 IST" duration-ms="9205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launching_App -->
-        <test-method retried="true" signature="logininvalid_Credencial()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:16:58 IST" name="logininvalid_Credencial" finished-at="2024-06-27T01:16:59 IST" duration-ms="1449" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logininvalid_Credencial -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:16:59 IST" name="close" finished-at="2024-06-27T01:16:59 IST" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:16:59 IST" name="launching_App" finished-at="2024-06-27T01:17:07 IST" duration-ms="7305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launching_App -->
-        <test-method signature="logininvalid_Credencial()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:07 IST" name="logininvalid_Credencial" finished-at="2024-06-27T01:17:08 IST" duration-ms="1112" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logininvalid_Credencial -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:08 IST" name="close" finished-at="2024-06-27T01:17:09 IST" duration-ms="266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:09 IST" name="launching_App" finished-at="2024-06-27T01:17:15 IST" duration-ms="5965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launching_App -->
-        <test-method retried="true" signature="productErrorValidation()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:15 IST" name="productErrorValidation" finished-at="2024-06-27T01:17:39 IST" duration-ms="24544" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productErrorValidation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:39 IST" name="close" finished-at="2024-06-27T01:17:39 IST" duration-ms="160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:39 IST" name="launching_App" finished-at="2024-06-27T01:17:44 IST" duration-ms="4606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launching_App -->
-        <test-method signature="productErrorValidation()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:44 IST" name="productErrorValidation" finished-at="2024-06-27T01:17:59 IST" duration-ms="14825" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productErrorValidation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@3a12c404]" started-at="2024-06-27T01:17:59 IST" name="close" finished-at="2024-06-27T01:17:59 IST" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- framework.Testcase.Error_Validation_Test -->
-    </test> <!-- Errorvalidation -->
-  </suite> <!-- Realtime -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -20,13 +20,13 @@ public class Landingpage extends AbstractComponents {
 	}
 
 	@FindBy(id = "userEmail")
-	WebElement userEmail;
+	private WebElement userEmail;
 
 	@FindBy(id = "userPassword")
-	WebElement userPassword;
+	private WebElement userPassword;
 
 	@FindBy(id = "login")
-	WebElement submit;
+	private WebElement submit;
 
 	public Product_catalogue login_Application(String email, String pass) {
 		userEmail.sendKeys(email);
