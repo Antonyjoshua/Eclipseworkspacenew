@@ -16,7 +16,7 @@ public class Error_Validation_Test extends BaseTest {
 	public void logininvalid_Credencial() {
 		 lp.login_Application("josh@yopmail.com", "Welcome@12");
 		 System.out.println(lp.getErrorMessage());
-		 Assert.assertEquals("Incorrect email password.",lp.getErrorMessage());
+		 Assert.assertEquals("Incorrect email or password.",lp.getErrorMessage());
 
 	}
 	//Checking wrong product

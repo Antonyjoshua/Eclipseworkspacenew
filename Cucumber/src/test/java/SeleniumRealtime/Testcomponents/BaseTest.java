@@ -94,12 +94,12 @@ public class BaseTest // this class will hold all the reusable content related t
 	// to all test methods, we need to run always run to the before and after
 	// testmethods
 	@BeforeMethod(alwaysRun = true)
-	public void launching_App() throws IOException {
+	public Landingpage launching_App() throws IOException {
 		// initialize_Driver();//- we can just use call the method it will work
 		driver = initialize_Driver(); // this method call the respective browser
 		lp = new Landingpage(driver);// passing driver to the landing page constructor
 		lp.url("https://rahulshettyacademy.com/client");
-		// return lp- return the landingpage instance if you want to call this method in
+		 return lp;//- return the landingpage instance if you want to call this method in
 		// the test class, when @beforemethod annotation not used
 	}
 	

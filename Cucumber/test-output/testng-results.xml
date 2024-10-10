@@ -2,24 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T11:01:52 IST" name="Default suite" finished-at="2024-08-12T11:02:19 IST" duration-ms="27812">
+  <suite started-at="2024-10-10T21:44:02 IST" name="Default suite" finished-at="2024-10-10T21:44:31 IST" duration-ms="28129">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@5b247367]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-08-12T11:01:52 IST" name="Default test" finished-at="2024-08-12T11:02:19 IST" duration-ms="27812">
-      <class name="SeleniumRealtime.testcases.CreateAccountTest">
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:SeleniumRealtime.testcases.CreateAccountTest@4145bad8]" started-at="2024-08-12T11:01:52 IST" name="launching_App" finished-at="2024-08-12T11:02:02 IST" duration-ms="10430" status="PASS">
+    <test started-at="2024-10-10T21:44:02 IST" name="Default test" finished-at="2024-10-10T21:44:31 IST" duration-ms="28129">
+      <class name="Cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@5b247367]" started-at="2024-10-10T21:44:02 IST" name="setUpClass" finished-at="2024-10-10T21:44:04 IST" duration-ms="1366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@68b9834c]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launching_App -->
-        <test-method signature="createaccount()[pri:0, instance:SeleniumRealtime.testcases.CreateAccountTest@4145bad8]" started-at="2024-08-12T11:02:02 IST" name="createaccount" finished-at="2024-08-12T11:02:19 IST" duration-ms="16934" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@5b247367]" started-at="2024-10-10T21:44:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-10T21:44:30 IST" duration-ms="26613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchasing an order from an ecommerce site"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createaccount -->
-        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumRealtime.testcases.CreateAccountTest@4145bad8]" started-at="2024-08-12T11:02:19 IST" name="close" finished-at="2024-08-12T11:02:19 IST" duration-ms="360" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@5b247367]" started-at="2024-10-10T21:44:30 IST" name="tearDownClass" finished-at="2024-10-10T21:44:31 IST" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- SeleniumRealtime.testcases.CreateAccountTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestNGTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -13,6 +13,7 @@ public class AccessModifierpackage extends AccessModifier{
 		System.out.println(am.j);
 		AccessModifierpackage amp= new AccessModifierpackage();
 		amp.getdata4();
+		Accessmodifierpackage2 am2= new Accessmodifierpackage2();
 		
 		
 	    

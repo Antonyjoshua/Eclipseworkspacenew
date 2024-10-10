@@ -29,6 +29,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="CornovusCapital.CornovusCapital"/>
 			<item value="Cucumber.Cucumber_realtime"/>
 			<item value="reports.ExtentReports"/>
 			<item value="E2E_framework.Framwork"/>
@@ -37,6 +38,7 @@
 			<item value="Practice"/>
 		</list>
 		<list key="groupId">
+			<item value="CornovusCapital"/>
 			<item value="Cucumber"/>
 			<item value="reports"/>
 			<item value="E2E_framework"/>
@@ -45,6 +47,7 @@
 			<item value="Practice"/>
 		</list>
 		<list key="artifactId">
+			<item value="CornovusCapital"/>
 			<item value="Cucumber_realtime"/>
 			<item value="ExtentReports"/>
 			<item value="Framwork"/>
