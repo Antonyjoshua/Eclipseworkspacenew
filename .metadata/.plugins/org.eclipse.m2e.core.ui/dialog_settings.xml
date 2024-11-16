@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ACW USER\eclipse-workspace\Selenium\src\com\auto\Locators_2.java"/>
 			<item value="C:\Users\ACW USER\eclipse-workspace\RealTimeProject"/>
 			<item value="C:\Users\ACW USER\eclipse-workspace\Selenium"/>
 			<item value="C:\Users\ACW USER\eclipse-workspace\Selenium\pom.xml"/>
@@ -29,6 +30,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="CornovusCapital.auto"/>
 			<item value="CornovusCapital.CornovusCapital"/>
 			<item value="Cucumber.Cucumber_realtime"/>
 			<item value="reports.ExtentReports"/>
@@ -47,6 +49,7 @@
 			<item value="Practice"/>
 		</list>
 		<list key="artifactId">
+			<item value="auto"/>
 			<item value="CornovusCapital"/>
 			<item value="Cucumber_realtime"/>
 			<item value="ExtentReports"/>

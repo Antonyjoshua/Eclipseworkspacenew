@@ -27,6 +27,7 @@ public class GoogleTest {
         
         // Create a RemoteWebDriver instance that connects to a Selenium Grid at the specified IP address
         // and uses the capabilities defined above (in this case, Chrome browser)
+        //You can run in selenium in any machine but the URL should be correct since it is going to the hub and running it
         WebDriver driver = new RemoteWebDriver(new URI("http://192.168.0.106:4444").toURL(), cap);
         
         // Open the Google homepage using the WebDriver
