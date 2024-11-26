@@ -18,7 +18,6 @@ public class Overloading {
 		
         System.out.println(creditcard + cash);
 	}
-	
 	public void cod() {
 		System.out.println("Overloading price");
 

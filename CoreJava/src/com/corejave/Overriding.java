@@ -6,7 +6,7 @@ public class Overriding extends Overloading {
 	public void cod() {
 
 		// super keyword get the data from the parent class
-		 super.cod();
+		// super.cod();
 		System.out.println("Overriding price");
 	}
 	public void check() {
