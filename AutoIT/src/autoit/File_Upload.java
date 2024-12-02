@@ -5,15 +5,21 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class File_Upload {
 
-	//Runtime.getRuntime()
+	// Runtime.getRuntime()
 
 //This retrieves the current Java runtime environment.
 //The runtime environment provides methods to interact with the Java Virtual Machine (JVM), such as executing external processes, interacting with system properties, or managing memory.
@@ -51,12 +57,27 @@ public class File_Upload {
 	public static void main(String[] args) throws InterruptedException, IOException, AWTException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.ilovepdf.com/pdf_to_jpg");
 		driver.findElement(By.id("pickfiles")).click();
 		Thread.sleep(3000);
 		Runtime.getRuntime().exec("C:\\Users\\ACW USER\\Documents\\Upload.exe");
-    
-
+		WebElement convert = driver.findElement(By.id("processTaskTextBtn"));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
+		w.until(ExpectedConditions.visibilityOf(convert));
+		convert.click();
+		WebElement download = driver.findElement(By.cssSelector("div[class='downloader']"));
+		w.until(ExpectedConditions.visibilityOf(download));
+		download.click();
+		// Using this method run only is your system since the path is the dynamic so it
+		// code won't run in jenkins or in different system
+		File f = new File("C:\\Users\\ACW USER\\Downloads\\ilovepdf_pages-to-jpg.zip");
+		if (f.exists())// Check whether the file exist in the path
+		{
+			System.out.println("File downloaded successfully");
+		} else {
+			System.out.println("Error");
+		}
 
 	}
 

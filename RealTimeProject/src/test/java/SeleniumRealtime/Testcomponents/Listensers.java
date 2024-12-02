@@ -92,9 +92,8 @@ public class Listensers extends BaseTest implements ITestListener {
 		try {
 			// driver gets life from the above script that driver is passed to the get
 			// screenshot method
-			screenShot = getScreenShot(result.getMethod().getMethodName(), driver);// we extends basetest class to this
-																					// method
-			// to call this method
+			screenShot = getScreenShot(result.getMethod().getMethodName(), driver);
+			// we extends basetest class to this method to call this method
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
