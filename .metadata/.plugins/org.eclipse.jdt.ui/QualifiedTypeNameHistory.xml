@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="framework.abstractcomponents.AbstractComponents"/>
-    <fullyQualifiedTypeName name="framework.pageobjects.Checkout_page"/>
     <fullyQualifiedTypeName name="framework.pageobjects.Confirmation_Page"/>
     <fullyQualifiedTypeName name="framework.Testcomponents.BaseTest"/>
     <fullyQualifiedTypeName name="framework.pageobjects.Product_catalogue"/>
@@ -56,8 +54,10 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeOptions"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="org.apache.poi.sl.usermodel.Sheet"/>
     <fullyQualifiedTypeName name="org.apache.commons.collections4.bag.SynchronizedSortedBag"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="practice.com.Exceldriven"/>
 </qualifiedTypeNameHistroy>

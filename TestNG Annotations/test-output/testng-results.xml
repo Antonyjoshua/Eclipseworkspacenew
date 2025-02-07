@@ -1,117 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-14T23:41:22 IST" name="Annotations" finished-at="2024-02-14T23:41:23 IST" duration-ms="150">
+  <suite started-at="2025-01-20T15:13:08 IST" name="Default suite" finished-at="2025-01-20T15:13:08 IST" duration-ms="194">
     <groups>
+      <group name="Name">
+        <method signature="Annotation2.firsttest2()[pri:0, instance:annotations.Annotation2@242b836]" name="firsttest2" class="annotations.Annotation2"/>
+      </group> <!-- Name -->
     </groups>
-    <test started-at="2024-02-14T23:41:22 IST" name="Order of annotations" finished-at="2024-02-14T23:41:23 IST" duration-ms="150">
-      <class name="annotations.Annotations3">
-        <test-method is-config="true" signature="beforetest3()[pri:0, instance:annotations.Annotations3@229c6181]" started-at="2024-02-14T23:41:22 IST" name="beforetest3" finished-at="2024-02-14T23:41:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforetest3 -->
-        <test-method is-config="true" signature="beforeclass3()[pri:0, instance:annotations.Annotations3@229c6181]" started-at="2024-02-14T23:41:23 IST" name="beforeclass3" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass3 -->
-        <test-method signature="firsttest3()[pri:0, instance:annotations.Annotations3@229c6181]" started-at="2024-02-14T23:41:23 IST" name="firsttest3" finished-at="2024-02-14T23:41:23 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firsttest3 -->
-        <test-method is-config="true" signature="aftertest3()[pri:0, instance:annotations.Annotations3@229c6181]" started-at="2024-02-14T23:41:23 IST" name="aftertest3" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftertest3 -->
-      </class> <!-- annotations.Annotations3 -->
+    <test started-at="2025-01-20T15:13:08 IST" name="Default test" finished-at="2025-01-20T15:13:08 IST" duration-ms="194">
       <class name="annotations.Annotation2">
-        <test-method is-config="true" signature="beforetest2()[pri:0, instance:annotations.Annotation2@4d154ccd]" started-at="2024-02-14T23:41:22 IST" name="beforetest2" finished-at="2024-02-14T23:41:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforetest2()[pri:0, instance:annotations.Annotation2@242b836]" started-at="2025-01-20T15:13:08 IST" name="beforetest2" finished-at="2025-01-20T15:13:08 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest2 -->
-        <test-method is-config="true" signature="beforeclass2()[pri:0, instance:annotations.Annotation2@4d154ccd]" started-at="2024-02-14T23:41:23 IST" name="beforeclass2" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeclass2()[pri:0, instance:annotations.Annotation2@242b836]" started-at="2025-01-20T15:13:08 IST" name="beforeclass2" finished-at="2025-01-20T15:13:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass2 -->
-        <test-method signature="firsttest2()[pri:0, instance:annotations.Annotation2@4d154ccd]" started-at="2024-02-14T23:41:23 IST" name="firsttest2" finished-at="2024-02-14T23:41:23 IST" duration-ms="5" status="PASS">
+        <test-method signature="firsttest2()[pri:0, instance:annotations.Annotation2@242b836]" started-at="2025-01-20T15:13:08 IST" name="firsttest2" finished-at="2025-01-20T15:13:08 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firsttest2 -->
-        <test-method is-config="true" signature="Afterclass2()[pri:0, instance:annotations.Annotation2@4d154ccd]" started-at="2024-02-14T23:41:23 IST" name="Afterclass2" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Afterclass2()[pri:0, instance:annotations.Annotation2@242b836]" started-at="2025-01-20T15:13:08 IST" name="Afterclass2" finished-at="2025-01-20T15:13:08 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Afterclass2 -->
-        <test-method is-config="true" signature="aftertest2()[pri:0, instance:annotations.Annotation2@4d154ccd]" started-at="2024-02-14T23:41:23 IST" name="aftertest2" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftertest2()[pri:0, instance:annotations.Annotation2@242b836]" started-at="2025-01-20T15:13:08 IST" name="aftertest2" finished-at="2025-01-20T15:13:08 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest2 -->
-        <test-method is-config="true" signature="aftersuite2()[pri:0, instance:annotations.Annotation2@4d154ccd]" started-at="2024-02-14T23:41:23 IST" name="aftersuite2" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftersuite2()[pri:0, instance:annotations.Annotation2@242b836]" started-at="2025-01-20T15:13:08 IST" name="aftersuite2" finished-at="2025-01-20T15:13:08 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite2 -->
       </class> <!-- annotations.Annotation2 -->
-      <class name="annotations.Annotations1">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:22 IST" name="beforesuite" finished-at="2024-02-14T23:41:22 IST" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:22 IST" name="beforetest" finished-at="2024-02-14T23:41:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:22 IST" name="beforeclass" finished-at="2024-02-14T23:41:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:22 IST" name="beforemethod" finished-at="2024-02-14T23:41:22 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="firsttest()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:22 IST" name="firsttest" finished-at="2024-02-14T23:41:22 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firsttest -->
-        <test-method is-config="true" signature="Aftermethod()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:22 IST" name="Aftermethod" finished-at="2024-02-14T23:41:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="beforemethod" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="secondtest()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="secondtest" finished-at="2024-02-14T23:41:23 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- secondtest -->
-        <test-method is-config="true" signature="Aftermethod()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="Aftermethod" finished-at="2024-02-14T23:41:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="beforemethod" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="thirdtest()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="thirdtest" finished-at="2024-02-14T23:41:23 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- thirdtest -->
-        <test-method is-config="true" signature="Aftermethod()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="Aftermethod" finished-at="2024-02-14T23:41:23 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="Afterclass()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="Afterclass" finished-at="2024-02-14T23:41:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Afterclass -->
-        <test-method is-config="true" signature="aftertest()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="aftertest" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftertest -->
-        <test-method is-config="true" signature="aftersuite()[pri:0, instance:annotations.Annotations1@3012646b]" started-at="2024-02-14T23:41:23 IST" name="aftersuite" finished-at="2024-02-14T23:41:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftersuite -->
-      </class> <!-- annotations.Annotations1 -->
-    </test> <!-- Order of annotations -->
-  </suite> <!-- Annotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
