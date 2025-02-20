@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="framework.pageobjects.Confirmation_Page"/>
-    <fullyQualifiedTypeName name="framework.Testcomponents.BaseTest"/>
     <fullyQualifiedTypeName name="framework.pageobjects.Product_catalogue"/>
     <fullyQualifiedTypeName name="framework.pageobjects.Cart_Page"/>
     <fullyQualifiedTypeName name="framework.pageobjects.Order_Page"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="practice.com.Exceldriven"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.CellType"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.util.NumberToTextConverter"/>
 </qualifiedTypeNameHistroy>
