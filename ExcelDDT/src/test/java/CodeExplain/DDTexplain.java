@@ -1,4 +1,4 @@
-package practice.com;
+package CodeExplain;
 
 import java.io.FileInputStream; // Imports for handling files
 import java.io.IOException;

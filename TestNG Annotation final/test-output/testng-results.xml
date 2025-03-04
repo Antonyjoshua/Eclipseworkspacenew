@@ -2,64 +2,67 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-27T12:48:19 IST" name="Default suite" finished-at="2024-09-27T12:48:19 IST" duration-ms="157">
+  <suite started-at="2025-02-25T00:05:50 IST" name="Default suite" finished-at="2025-02-25T00:05:50 IST" duration-ms="164">
     <groups>
+      <group name="Editing">
+        <method signature="Hotels.editHotels()[pri:0, instance:Final.Hotels@909217e]" name="editHotels" class="Final.Hotels"/>
+      </group> <!-- Editing -->
     </groups>
-    <test started-at="2024-09-27T12:48:19 IST" name="Default test" finished-at="2024-09-27T12:48:19 IST" duration-ms="157">
-      <class name="Final.Parameterization">
-        <test-method is-config="true" signature="checkclass()[pri:0, instance:Final.Parameterization@4d5650ae]" started-at="2024-09-27T12:48:19 IST" name="checkclass" finished-at="2024-09-27T12:48:19 IST" duration-ms="17" status="PASS">
+    <test started-at="2025-02-25T00:05:50 IST" name="Default test" finished-at="2025-02-25T00:05:50 IST" duration-ms="164">
+      <class name="Final.Hotels">
+        <test-method is-config="true" signature="firstoutput()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstoutput" finished-at="2025-02-25T00:05:50 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkclass -->
-        <test-method signature="multipletc(java.lang.String,java.lang.String)[pri:0, instance:Final.Parameterization@4d5650ae]" started-at="2024-09-27T12:48:19 IST" name="multipletc" data-provider="getdata" finished-at="2024-09-27T12:48:19 IST" duration-ms="15" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Antony]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[welcome@123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- firstoutput -->
+        <test-method is-config="true" signature="firsttest()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firsttest" finished-at="2025-02-25T00:05:50 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipletc -->
-        <test-method signature="multipletc(java.lang.String,java.lang.String)[pri:0, instance:Final.Parameterization@4d5650ae]" started-at="2024-09-27T12:48:19 IST" name="multipletc" data-provider="getdata" finished-at="2024-09-27T12:48:19 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[joshua]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[welcome@123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- firsttest -->
+        <test-method is-config="true" signature="firstclass()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstclass" finished-at="2025-02-25T00:05:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipletc -->
-        <test-method signature="multipletc(java.lang.String,java.lang.String)[pri:0, instance:Final.Parameterization@4d5650ae]" started-at="2024-09-27T12:48:19 IST" name="multipletc" data-provider="getdata" finished-at="2024-09-27T12:48:19 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mercy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[welcome@123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- firstclass -->
+        <test-method is-config="true" signature="firstbeforemethod()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstbeforemethod" finished-at="2025-02-25T00:05:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipletc -->
-      </class> <!-- Final.Parameterization -->
+        </test-method> <!-- firstbeforemethod -->
+        <test-method signature="addHotels()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="addHotels" finished-at="2025-02-25T00:05:50 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addHotels -->
+        <test-method is-config="true" signature="firstAftermethod()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstAftermethod" finished-at="2025-02-25T00:05:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstAftermethod -->
+        <test-method is-config="true" signature="firstbeforemethod()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstbeforemethod" finished-at="2025-02-25T00:05:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstbeforemethod -->
+        <test-method signature="editHotels()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="editHotels" finished-at="2025-02-25T00:05:50 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editHotels -->
+        <test-method is-config="true" signature="firstAftermethod()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstAftermethod" finished-at="2025-02-25T00:05:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstAftermethod -->
+        <test-method is-config="true" signature="firstbeforemethod()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstbeforemethod" finished-at="2025-02-25T00:05:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstbeforemethod -->
+        <test-method signature="viewHotels()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="viewHotels" finished-at="2025-02-25T00:05:50 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewHotels -->
+        <test-method is-config="true" signature="firstAftermethod()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstAftermethod" finished-at="2025-02-25T00:05:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstAftermethod -->
+        <test-method is-config="true" signature="firstafterclass()[pri:0, instance:Final.Hotels@909217e]" started-at="2025-02-25T00:05:50 IST" name="firstafterclass" finished-at="2025-02-25T00:05:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstafterclass -->
+      </class> <!-- Final.Hotels -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

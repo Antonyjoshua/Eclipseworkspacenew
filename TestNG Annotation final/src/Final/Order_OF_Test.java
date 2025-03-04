@@ -2,7 +2,6 @@ package Final;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class Order_OF_Test {
 	//test will gets executed in alphabetical order

@@ -1,3 +1,6 @@
+//Identify Name coloum by scanning the entire 1st row
+	//once coloumn is identified then scan entire Name coloum to identify clair row
+	//after you grab clair row = pull all the data of that row and feed into test
 package practice.com;
 
 import java.io.FileInputStream;
@@ -23,21 +26,21 @@ public class Exceldriven {
 			if (workbook.getSheetName(i).equalsIgnoreCase("ExcelDDT")) {
 				XSSFSheet sheet = workbook.getSheetAt(i);
 				System.out.println(workbook.getSheetAt(i).getSheetName());
-				Iterator<Row> rowIterator = sheet.rowIterator();
-				Row nextrow = rowIterator.next();
-				Iterator<Cell> cellIterator = nextrow.cellIterator();
+				Iterator<Row> row = sheet.rowIterator();
+				Row nextrow = row.next();
+				Iterator<Cell> cell = nextrow.cellIterator();
 				int k = 0;
 				int column = 0;
-				while (cellIterator.hasNext()) {
-					Cell nextcell = cellIterator.next();
+				while (cell.hasNext()) {
+					Cell nextcell = cell.next();
 					if (nextcell.getStringCellValue().equalsIgnoreCase("Name")) {
 						column = k;
 					}
 					k++;
 				}
-				System.out.println(column);
-				while (rowIterator.hasNext()) {
-					Row desiredrow = rowIterator.next();
+				System.out.println("Column index for 'Name': "+column);
+				while (row.hasNext()) {
+					Row desiredrow = row.next();
 					if (desiredrow.getCell(column).getStringCellValue().equalsIgnoreCase(name)) {
 						Iterator<Cell> cellIterator2 = desiredrow.cellIterator();
 //						while (cellIterator2.hasNext()) {

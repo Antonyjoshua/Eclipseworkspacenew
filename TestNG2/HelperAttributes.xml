@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Myhotelai">
+  <test name="Users" verbose="3">
+	  <parameter name="Username" value="antony@yopmail.com"></parameter>
+    <classes>
+      <class name="testng.com.Day1"/>
+      <class name="testng.com.Day_2"/>
+       <class name="testng.com.Day3"/>
+      <class name="testng.com.Day4"/>
+    </classes>
+  </test> 
+</suite> 

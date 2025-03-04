@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [packagelevel]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="package(failed)">
+    <classes>
+      <class name="testng.com.Day3">
+        <methods>
+          <include name="viewUser"/>
+          <include name="edituser"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- testng.com.Day3 -->
+      <class name="testng.com.ParallelBrowser">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testExample"/>
+        </methods>
+      </class> <!-- testng.com.ParallelBrowser -->
+      <class name="testng.com.Day4">
+        <methods>
+          <include name="addHotel"/>
+        </methods>
+      </class> <!-- testng.com.Day4 -->
+    </classes>
+  </test> <!-- package(failed) -->
+</suite> <!-- Failed suite [packagelevel] -->

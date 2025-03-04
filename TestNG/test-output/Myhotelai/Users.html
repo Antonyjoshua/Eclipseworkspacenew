@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 26 01:05:14 IST 2024</td>
+<td>Started on:</td><td>Tue Feb 25 00:02:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (423 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (622 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -89,24 +89,30 @@ function toggleAllBoxes() {
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1527120879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1527120879'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1457263953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1457263953'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -118,25 +124,31 @@ function toggleAllBoxes() {
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testng.com.Day3@8519cb4</td></tr>
+<td>testng.com.Day3@712625fd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -147,60 +159,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testng.com.Day4.viewHotel()'><b>viewHotel</b><br>Test class: testng.com.Day4</td>
+<td title='testng.com.Day_2.mobilelogin()'><b>mobilelogin</b><br>Test class: testng.com.Day_2</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day4@31ea9581</td></tr>
-<tr>
-<td title='testng.com.Day1.print()'><b>print</b><br>Test class: testng.com.Day1</td>
-<td></td>
-<td>0</td>
-<td>testng.com.Day1@74e28667</td></tr>
-<tr>
-<td title='testng.com.Day_2.weblogin()'><b>weblogin</b><br>Test class: testng.com.Day_2</td>
-<td></td>
-<td>0</td>
-<td>testng.com.Day_2@4a83a74a</td></tr>
+<td>testng.com.Day_2@4be29ed9</td></tr>
 <tr>
 <td title='testng.com.Day4.addHotel()'><b>addHotel</b><br>Test class: testng.com.Day4<br>Parameters: antony@yopmail.com</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day4@31ea9581</td></tr>
-<tr>
-<td title='testng.com.Day4.editHotel()'><b>editHotel</b><br>Test class: testng.com.Day4</td>
-<td></td>
-<td>0</td>
-<td>testng.com.Day4@31ea9581</td></tr>
+<td>testng.com.Day4@48bb62</td></tr>
 <tr>
 <td title='testng.com.Day_2.mobilelogin2()'><b>mobilelogin2</b><br>Test class: testng.com.Day_2</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day_2@4a83a74a</td></tr>
+<td>testng.com.Day_2@4be29ed9</td></tr>
+<tr>
+<td title='testng.com.Day4.editHotel()'><b>editHotel</b><br>Test class: testng.com.Day4</td>
+<td></td>
+<td>0</td>
+<td>testng.com.Day4@48bb62</td></tr>
+<tr>
+<td title='testng.com.Day1.print()'><b>print</b><br>Test class: testng.com.Day1</td>
+<td></td>
+<td>0</td>
+<td>testng.com.Day1@563f38c4</td></tr>
+<tr>
+<td title='testng.com.Day4.viewHotel()'><b>viewHotel</b><br>Test class: testng.com.Day4</td>
+<td></td>
+<td>0</td>
+<td>testng.com.Day4@48bb62</td></tr>
 <tr>
 <td title='testng.com.Day3.deleteUser()'><b>deleteUser</b><br>Test class: testng.com.Day3</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day3@8519cb4</td></tr>
+<td>testng.com.Day3@712625fd</td></tr>
 <tr>
-<td title='testng.com.Day1.print1()'><b>print1</b><br>Test class: testng.com.Day1</td>
+<td title='testng.com.Day_2.weblogin()'><b>weblogin</b><br>Test class: testng.com.Day_2</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day1@74e28667</td></tr>
-<tr>
-<td title='testng.com.Day_2.mobilelogin()'><b>mobilelogin</b><br>Test class: testng.com.Day_2</td>
-<td></td>
-<td>0</td>
-<td>testng.com.Day_2@4a83a74a</td></tr>
+<td>testng.com.Day_2@4be29ed9</td></tr>
 <tr>
 <td title='testng.com.Day4.deletehotel()'><b>deletehotel</b><br>Test class: testng.com.Day4</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day4@31ea9581</td></tr>
+<td>testng.com.Day4@48bb62</td></tr>
+<tr>
+<td title='testng.com.Day1.print1()'><b>print1</b><br>Test class: testng.com.Day1</td>
+<td></td>
+<td>0</td>
+<td>testng.com.Day1@563f38c4</td></tr>
 <tr>
 <td title='testng.com.Day3.addUser()'><b>addUser</b><br>Test class: testng.com.Day3</td>
 <td></td>
 <td>0</td>
-<td>testng.com.Day3@8519cb4</td></tr>
+<td>testng.com.Day3@712625fd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -212,40 +224,52 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testng.com.Day3.edituser()'><b>edituser</b><br>Test class: testng.com.Day3</td>
-<td><div><pre>java.lang.Throwable: Method testng.com.Day3.edituser() on instance testng.com.Day3@8519cb4 depends on not successfully finished methods 
-[testng.com.Day3.viewUser() on instance testng.com.Day3@8519cb4]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+<td><div><pre>java.lang.Throwable: Method testng.com.Day3.edituser() on instance testng.com.Day3@712625fd depends on not successfully finished methods 
+[testng.com.Day3.viewUser() on instance testng.com.Day3@712625fd]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace42130098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace42130098'><pre>java.lang.Throwable: Method testng.com.Day3.edituser() on instance testng.com.Day3@8519cb4 depends on not successfully finished methods 
-[testng.com.Day3.viewUser() on instance testng.com.Day3@8519cb4]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace351417028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace351417028'><pre>java.lang.Throwable: Method testng.com.Day3.edituser() on instance testng.com.Day3@712625fd depends on not successfully finished methods 
+[testng.com.Day3.viewUser() on instance testng.com.Day3@712625fd]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>testng.com.Day3@8519cb4</td></tr>
+<td>testng.com.Day3@712625fd</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Myhotelai">
+  <test name="Users" verbose="3">
+    <classes>
+      <class name="testng.com.Day1"/>
+      <class name="testng.com.Day_2">
+		  <methods>
+			  <exclude name="mobile.*"></exclude>
+		  </methods>
+      </class>
+       <class name="testng.com.Day3">
+		<methods>
+			<include name="deleteUser"></include>
+		</methods>   
+	   </class>
+      
+    </classes>
+  </test> 
+  <test name="Hotels">
+    <classes>
+      <class name="testng.com.Day4">
+		  <methods><exclude name="deletehotel"></exclude></methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 

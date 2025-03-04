@@ -3,7 +3,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TestNG Annotation final"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
-        <mapEntry key="Final.Order_OF_Test" value="c;d;a;b"/>
+        <mapEntry key="Final.Order_OF_Test" value="d;b;c;a"/>
     </mapAttribute>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
         <listEntry value="Final.Order_OF_Test"/>
