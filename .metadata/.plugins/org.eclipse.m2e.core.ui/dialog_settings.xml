@@ -74,6 +74,7 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="Upload_download"/>
 			<item value="Maven"/>
 			<item value="depth.com"/>
 			<item value="FirstProject"/>
@@ -81,6 +82,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Upload_download"/>
 			<item value="Maven"/>
 			<item value="depth.com"/>
 			<item value="Seleniumproject"/>

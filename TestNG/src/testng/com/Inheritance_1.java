@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class Inheritance_1  {
 	
 	@BeforeMethod
-	public void parentmethod1()
+	public void childmethod1()
 	{
 		System.out.println("before method in parent class");
 	}
@@ -18,7 +18,7 @@ public class Inheritance_1  {
 	}
 	
 	@AfterMethod
-	public void parentmethod2()
+	public void childmethod2()
 	{
 		System.out.println("after method in parent class");
 	}

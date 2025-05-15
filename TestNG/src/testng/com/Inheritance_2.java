@@ -13,10 +13,16 @@ public class Inheritance_2 extends Inheritance_1 {
 		System.out.println(in.increment());
 		System.out.println(in.decrement());
 		System.out.println(in.multiplytwo());
+		System.out.println(in.multiplythree());
 
 	}
 	// when we run the child class, it will check the parent class and get the
 	// knowledge about all the methods present in the parent class and keep it in
 	// the child
-	// class memory and even if the before and after method where in parent class.
+	// even if the before and after method where in parent class the child class has
+	// all the memory.
+	// What is Boilerplate Code?
+	// Boilerplate code refers to repetitive, standard code that is often required
+	// in many programs but doesn’t contribute to the core logic of the application.
+	// It is typically used for setup, configuration, or structure in programming.
 }

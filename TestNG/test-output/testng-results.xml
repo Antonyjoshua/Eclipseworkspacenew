@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-25T00:02:49 IST" name="Default suite" finished-at="2025-02-25T00:02:49 IST" duration-ms="134">
+  <suite started-at="2025-03-06T23:09:38 IST" name="Default suite" finished-at="2025-03-06T23:09:38 IST" duration-ms="122">
     <groups>
     </groups>
-    <test started-at="2025-02-25T00:02:49 IST" name="Default test" finished-at="2025-02-25T00:02:49 IST" duration-ms="134">
-      <class name="testng.com.Day_2">
-        <test-method signature="mobilelogin()[pri:0, instance:testng.com.Day_2@6d4d66d2]" started-at="2025-02-25T00:02:49 IST" name="mobilelogin" finished-at="2025-02-25T00:02:49 IST" duration-ms="15" status="PASS">
+    <test started-at="2025-03-06T23:09:38 IST" name="Default test" finished-at="2025-03-06T23:09:38 IST" duration-ms="122">
+      <class name="testng.com.Inheritance_2">
+        <test-method is-config="true" signature="childmethod1()[pri:0, instance:testng.com.Inheritance_2@8f2ef19]" started-at="2025-03-06T23:09:38 IST" name="childmethod1" finished-at="2025-03-06T23:09:38 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mobilelogin -->
-        <test-method signature="mobilelogin2()[pri:0, instance:testng.com.Day_2@6d4d66d2]" started-at="2025-02-25T00:02:49 IST" name="mobilelogin2" finished-at="2025-02-25T00:02:49 IST" duration-ms="11" status="PASS">
+        </test-method> <!-- childmethod1 -->
+        <test-method signature="childmethod()[pri:0, instance:testng.com.Inheritance_2@8f2ef19]" started-at="2025-03-06T23:09:38 IST" name="childmethod" finished-at="2025-03-06T23:09:38 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mobilelogin2 -->
-        <test-method signature="weblogin()[pri:0, instance:testng.com.Day_2@6d4d66d2]" started-at="2025-02-25T00:02:49 IST" name="weblogin" finished-at="2025-02-25T00:02:49 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- childmethod -->
+        <test-method is-config="true" signature="childmethod2()[pri:0, instance:testng.com.Inheritance_2@8f2ef19]" started-at="2025-03-06T23:09:38 IST" name="childmethod2" finished-at="2025-03-06T23:09:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- weblogin -->
-      </class> <!-- testng.com.Day_2 -->
+        </test-method> <!-- childmethod2 -->
+      </class> <!-- testng.com.Inheritance_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
