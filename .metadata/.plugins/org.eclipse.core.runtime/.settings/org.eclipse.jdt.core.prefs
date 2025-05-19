@@ -1,4 +1,12 @@
+JRE_LIB=C\:/Program Files/Java/jdk-21/lib/jrt-fs.jar
+JRE_SRC=C\:/Program Files/Java/jdk-21/lib/src.zip
 eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Users/ACW/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Users/ACW/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/ACW/.p2/pool/plugins/org.junit_4.13.2.v20240929-1000.jar
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/ACW/.m2/repository
+org.eclipse.jdt.core.classpathVariable.TESTNG_HOME=C\:/Users/ACW/eclipse/java-2025-03/eclipse/configuration/org.eclipse.osgi/522/0/.cp
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=17

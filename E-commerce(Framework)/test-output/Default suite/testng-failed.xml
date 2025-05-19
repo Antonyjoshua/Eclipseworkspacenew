@@ -6,8 +6,8 @@
       <class name="framework.Testcase.PurchaseOrder">
         <methods>
           <include name="purchaseOrder" invocation-numbers="0"/>
-          <include name="orderHistoryTest"/>
           <include name="close"/>
+          <include name="orderHistoryTest"/>
           <include name="launching_App"/>
         </methods>
       </class> <!-- framework.Testcase.PurchaseOrder -->
