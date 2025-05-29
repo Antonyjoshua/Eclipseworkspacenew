@@ -15,6 +15,7 @@ public class Upload_download {
 
 		WebDriver driver = new ChromeDriver();
 		String fruitname="Banana";
+		String filename="C:\\Users\\ACW\\Downloads\\test.xlsx";
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/upload-download-test/index.html");
@@ -32,10 +33,16 @@ public class Upload_download {
 //		System.out.println("run");
 //		driver.findElement(By.cssSelector("#downloadButton")).click();
 		driver.findElement(By.id("downloadButton")).click();
+		//Edit excel
+		int col=getColumnNumber(filename,"price");
+		int row=getRowNumber(filename,"Apple");
+		updateCell(filename,row,col,"599");
+		
+		//upload
 		WebElement upload = driver.findElement(By.id("fileinput"));
 		wait.until(ExpectedConditions.elementToBeClickable(upload));
 		//We can upload the file using sendkeys if the upload element has input type= file as a attribute
-		upload.sendKeys("C:\\Users\\ACW USER\\Downloads\\test.xlsx");// while giving the file path don't forget to add
+		upload.sendKeys("C:\\Users\\ACW\\Downloads\\test.xlsx");// while giving the file path don't forget to add
 																	// the file extension
 		WebElement toaster = driver.findElement(By.xpath("//div[@class='Toastify__toast-body']/div[2]"));
 		wait.until(ExpectedConditions.visibilityOf(toaster));
@@ -54,6 +61,21 @@ public class Upload_download {
 		String actualvalue = driver.findElement(By.xpath("//div[text()='"+fruitname+"']/parent::div/parent::div/div["+pricecolumn+"]")).getText();
 		System.out.println(actualvalue);
 		Assert.assertEquals( "15", actualvalue);
+	}
+
+	private static void updateCell(String filename, int row, int col, String value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static int getRowNumber(String filename, String row) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private static int getColumnNumber(String filename, String column) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
