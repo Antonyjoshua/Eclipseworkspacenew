@@ -18,7 +18,7 @@ public class Exceldriven_test {
 	public ArrayList<String> getdata(String name) throws IOException
 	{
         ArrayList<String> a= new ArrayList<String>();
-		FileInputStream fis=new FileInputStream("C:\\Users\\ACW USER\\Documents\\DTTDEMO.xlsx");
+		FileInputStream fis=new FileInputStream("C:\\Users\\ACW\\Documents\\DTTDEMO.xlsx");
 		XSSFWorkbook workbook=new XSSFWorkbook(fis);
 
 		int sheets=workbook.getNumberOfSheets();

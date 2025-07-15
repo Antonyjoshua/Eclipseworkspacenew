@@ -63,17 +63,17 @@ public class Upload_download {
 		Assert.assertEquals( "15", actualvalue);
 	}
 
-	private static void updateCell(String filename, int row, int col, String value) {
+	public static void updateCell(String filename, int row, int col, String value) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	private static int getRowNumber(String filename, String row) {
+	public static int getRowNumber(String filename, String row) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	private static int getColumnNumber(String filename, String column) {
+	public static int getColumnNumber(String filename, String column) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
