@@ -60,7 +60,7 @@ public class Upload_download {
 		String pricecolumn = driver.findElement(By.xpath("//div[text()='Price']")).getAttribute("data-column-id");//finding the price column and pass it to our xpath dynamically
 		String actualvalue = driver.findElement(By.xpath("//div[text()='"+fruitname+"']/parent::div/parent::div/div["+pricecolumn+"]")).getText();
 		System.out.println(actualvalue);
-		Assert.assertEquals( "15", actualvalue);
+		Assert.assertEquals( "69", actualvalue);
 	}
 
 	public static void updateCell(String filename, int row, int col, String value) {
