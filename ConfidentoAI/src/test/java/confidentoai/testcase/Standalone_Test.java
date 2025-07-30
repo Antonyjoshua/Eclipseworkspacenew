@@ -12,7 +12,7 @@ import confidentoai.pageobjects.List_User_Page;
 
 public class Standalone_Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver = new ChromeDriver();
 		String verifyloginactual = "IntervieVR";
@@ -37,7 +37,7 @@ public class Standalone_Test {
 		System.out.println(verifylistuser);
 		Assert.assertEquals(verifylistuser, verifyuseractual);
 
-		lu.create_user("Antony", "Joshua", "antony@ymail.com", "123456", "07-30-2000", "9514084221",
+		lu.create_user("Antony", "Joshua", "antony2@ymail.com", "123456", "07-30-2000", "9514084221",
 				"No:15B, test case road, scenario nager, document 123456",
 				"I'm a software tester with 2 years experience", "Indian","C:\\Users\\ACW\\Downloads\\profile.jpg");
 

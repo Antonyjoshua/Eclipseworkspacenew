@@ -29,6 +29,11 @@ public class List_User_Page extends AbstractComponents {
 
 	@FindBy(name = "firstName")
 	WebElement firstName;
+	
+	
+	
+	@FindBy(xpath = "//label[text()='First Name']")
+	WebElement label;
 
 	@FindBy(name = "lastName")
 	WebElement lastName;
@@ -68,31 +73,34 @@ public class List_User_Page extends AbstractComponents {
 	WebElement save;
 	
 	public void create_user(String firstn, String lastn, String el, String pass, String date, String pno,
-			String addr, String ctx, String nation, String pic) {
+			String addr, String ctx, String nation, String pic) throws InterruptedException {
 		firstName.sendKeys(firstn);
 		lastName.sendKeys(lastn);
 		email.sendKeys(el);
 		password.sendKeys(pass);
 		dob.sendKeys(date);
-		firstName.click();
+		label.click();
+		Thread.sleep(5000);
 		scrollByPixels(500);
 		waitForWebElementToAppear(gender);
 		gender.click();
-		scrollByPixels(500);
+		//scrollByPixels(500);
 		waitForWebElementToAppear(phoneno);
 		phoneno.sendKeys(pno);
-		scrollByPixels(500);
-		waitForWebElementToAppear(address);
+		scrollByPixels(300);
+		//waitForWebElementToAppear(address);
 		address.sendKeys(addr);
 		scrollByPixels(500);
 		waitForWebElementToAppear(context);
 		context.sendKeys(ctx);
-		//scrollByPixels(500);
+		scrollByPixels(200);
 		waitForWebElementToAppear(nationality);
 		nationality.sendKeys(nation);
-		//scrollByPixels(500);
+		scrollByPixels(200);
 		//waitForWebElementToAppear(profile);
 		profile.sendKeys(pic);
+		scrollToElement(save);
+		//scrollByPixels(700);
 		save.click();
 		
 
