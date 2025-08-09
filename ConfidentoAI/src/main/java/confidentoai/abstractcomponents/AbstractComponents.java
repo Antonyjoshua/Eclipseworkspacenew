@@ -47,30 +47,43 @@ public class AbstractComponents // base parent class for the page object files- 
 		wait.until(ExpectedConditions.invisibilityOf(load));
 
 	}
-	
+
 	public void elementToBeClickable(WebElement load) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(load));
 
 	}
-	 public void scrollToElement(WebElement element) {
-	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-	    }
-	 
-	 public void scrollByPixels(int pixels) {
-		    JavascriptExecutor js = (JavascriptExecutor) driver;
-		    js.executeScript("window.scrollBy(0, arguments[0]);", pixels);
-		}
 
-	
-	@FindBy(css="a[href='/list-user']")
-	private WebElement listuser;
-	
-	public void gotolistuser() {
-		listuser.click();	
-
+	public void scrollToElement(WebElement element) {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
+	public void scrollByPixels(int pixels) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, arguments[0]);", pixels);
+	}
 	
+	public void scrollToTop() {
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollTo(0, 0);");
+	}
+
+
+	@FindBy(css = "a[href='/list-user']")
+	private WebElement listuser;
+
+	public void gotolistuser() {
+		listuser.click();
+	}
+
+	@FindBy(css = "a[href='/organization']")
+	private WebElement organization;
+
+	public void gotoorganize() {
+		organization.click();
+		scrollToTop();
+		
+
+	}
 
 }

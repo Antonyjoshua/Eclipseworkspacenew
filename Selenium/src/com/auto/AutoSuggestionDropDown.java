@@ -10,12 +10,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class AutoSuggestionDropDown {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-		WebDriver driver= new EdgeDriver();
+		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.findElement(By.id("autocomplete")).sendKeys("ja");
