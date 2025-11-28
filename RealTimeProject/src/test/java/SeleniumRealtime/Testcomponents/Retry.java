@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 //for iretryanalyser we have to give it to the failed method itself as a attribute. The failed testcase will run multiple times first one got skipped and next one as failed
 //Based on the condition in this class, the test case will run multiple times.
 //when a test fails, it will go the listeners as well as this method. After taking screenshot and logging the result in the report it comes to this block and execute it.
+//"use" your Retry class by specifying it in test methods’ annotations as retryAnalyzer = Retry.class. Without this, it won’t get triggered during test runs. Check your test classes for usage of this annotation to locate where it is applied.
 public class Retry implements IRetryAnalyzer {
 	int count = 0;
 	int maxTry = 1;

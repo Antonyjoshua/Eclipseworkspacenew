@@ -5,31 +5,21 @@
     <listener class-name="SeleniumRealtime.Testcomponents.Listensers"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Errorvalidation(failed)">
-    <groups>
-      <run>
-        <include name="Errorvalidation"/>
-      </run>
-    </groups>
     <classes>
       <class name="SeleniumRealtime.testcases.Error_Validation_Test">
         <methods>
-          <include name="logininvalid_Credencial"/>
           <include name="launching_App"/>
+          <include name="logininvalid_Credencial"/>
           <include name="close"/>
         </methods>
       </class> <!-- SeleniumRealtime.testcases.Error_Validation_Test -->
     </classes>
   </test> <!-- Errorvalidation(failed) -->
   <test thread-count="5" parallel="tests" name="Convertedcode(failed)">
-    <groups>
-      <run>
-        <include name="Errorvalidation"/>
-      </run>
-    </groups>
     <classes>
       <class name="SeleniumRealtime.testcases.Standalone_convertTest">
         <methods>
-          <include name="purchaseOrder" invocation-numbers="1"/>
+          <include name="purchaseOrder" invocation-numbers="0"/>
           <include name="orderHistoryTest"/>
           <include name="launching_App"/>
           <include name="close"/>

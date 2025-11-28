@@ -30,12 +30,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.aj.selenium.Interview_Automation"/>
 			<item value="ConfidentoAI.ConfidentoAI"/>
 		</list>
 		<list key="groupId">
+			<item value="com.aj.selenium"/>
 			<item value="ConfidentoAI"/>
 		</list>
 		<list key="artifactId">
+			<item value="Interview_Automation"/>
 			<item value="ConfidentoAI"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -75,6 +78,7 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="CoreJava_Collections"/>
 			<item value="Upload_download"/>
 			<item value="Maven"/>
 			<item value="depth.com"/>
@@ -83,6 +87,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CoreJava_Collections"/>
 			<item value="Upload_download"/>
 			<item value="Maven"/>
 			<item value="depth.com"/>
