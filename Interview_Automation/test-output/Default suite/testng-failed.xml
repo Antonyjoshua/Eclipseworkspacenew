@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="interview.testcases.LoginTestcase">
+      <class name="interview.testcases.Swiggy">
         <methods>
-          <include name="close"/>
-          <include name="login_withvalid"/>
-          <include name="launching_app"/>
+          <include name="swiggy_search"/>
         </methods>
-      </class> <!-- interview.testcases.LoginTestcase -->
+      </class> <!-- interview.testcases.Swiggy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

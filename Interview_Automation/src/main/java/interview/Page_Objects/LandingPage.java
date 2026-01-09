@@ -1,5 +1,7 @@
 package interview.Page_Objects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,6 +37,9 @@ public class LandingPage extends Utility {
 	
 	@FindBy(xpath= "//label[contains(@class, 'x1a2a7pz')]")
 	private WebElement search;
+	
+	@FindBy(xpath= "//label[contains(@class, 'x1a2a7pz')]")
+	private List<WebElement> list;
 	
 	By sh= By.xpath("//label[contains(@class, 'x1a2a7pz')]");
 	

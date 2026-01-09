@@ -7,7 +7,7 @@ import interview.TestCompenent.BaseTest;
 
 public class LoginTestcase extends BaseTest {
 
-	@Test
+	@Test(groups = "smoke")
 	public void login_withvalid()
 	{
 		String username = prop.getProperty("username");
