@@ -10,8 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
-
 import SeleniumRealtime.abstractcomponents.AbstractComponents;
 
 public class Cart_Page extends AbstractComponents {
@@ -23,7 +21,6 @@ public class Cart_Page extends AbstractComponents {
 
 		PageFactory.initElements(driver, this);
 	}
-	
 
 	@FindBy(css = ".cartSection h3")
 	List<WebElement> cartproducts;
@@ -45,7 +42,7 @@ public class Cart_Page extends AbstractComponents {
 	public Checkout_page checkout() {
 
 		checkout.click();
-		Checkout_page chp= new Checkout_page(driver);
+		Checkout_page chp = new Checkout_page(driver);
 		return chp;
 	}
 

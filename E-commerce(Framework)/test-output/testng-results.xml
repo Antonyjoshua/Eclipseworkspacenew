@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results retried="2" ignored="0" total="7" passed="0" failed="4" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-19T04:59:33 PDT" name="Default suite" finished-at="2025-05-19T05:00:26 PDT" duration-ms="53000">
+  <suite started-at="2026-03-30T19:26:55 IST" name="Realtime" finished-at="2026-03-30T19:27:12 IST" duration-ms="17485">
     <groups>
       <group name="Errorvalidation">
-        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
+        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
+        <method signature="Error_Validation_Test.logininvalid_Credencial()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" name="logininvalid_Credencial" class="framework.Testcase.Error_Validation_Test"/>
       </group> <!-- Errorvalidation -->
       <group name="multipledata">
-        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
+        <method signature="PurchaseOrder.purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" name="purchaseOrder" class="framework.Testcase.PurchaseOrder"/>
       </group> <!-- multipledata -->
     </groups>
-    <test started-at="2025-05-19T04:59:33 PDT" name="Default test" finished-at="2025-05-19T05:00:26 PDT" duration-ms="53000">
+    <test started-at="2026-03-30T19:26:55 IST" name="PurchaseOrder" finished-at="2026-03-30T19:27:08 IST" duration-ms="12899">
       <class name="framework.Testcase.PurchaseOrder">
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T04:59:34 PDT" name="launching_App" finished-at="2025-05-19T04:59:45 PDT" duration-ms="11574" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:26:55 IST" name="launching_App" finished-at="2026-03-30T19:27:00 IST" duration-ms="5244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T04:59:45 PDT" name="purchaseOrder" data-provider="getdata" finished-at="2025-05-19T05:00:08 PDT" duration-ms="22596" status="FAIL">
+        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:27:00 IST" name="purchaseOrder" data-provider="getdata" finished-at="2026-03-30T19:27:02 IST" duration-ms="1998" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -25,17 +26,42 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[element click intercepted: Element is not clickable at point (1157, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90d163683cd3c48fb865f8723e43849a, clickElement {id=f.772C44E6D6FC996A05B80128C5553E4E.d.B589CED520DC0713D0A73A0725B86CDC.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60435}, goog:processID: 22604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60435/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (90d163683cd3c48fb865f8723e43849a)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 90d163683cd3c48fb865f8723e43849a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at framework.Testcase.PurchaseOrder.purchaseOrder(PurchaseOrder.java:29)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1157, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90d163683cd3c48fb865f8723e43849a, clickElement {id=f.772C44E6D6FC996A05B80128C5553E4E.d.B589CED520DC0713D0A73A0725B86CDC.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60435}, goog:processID: 22604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60435/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (90d163683cd3c48fb865f8723e43849a)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 90d163683cd3c48fb865f8723e43849a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at framework.pageobjects.Product_catalogue.addProductToCart(Product_catalogue.java:48)
+at framework.Testcase.PurchaseOrder.purchaseOrder(PurchaseOrder.java:26)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -50,33 +76,27 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseOrder -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T05:00:08 PDT" name="close" finished-at="2025-05-19T05:00:08 PDT" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:27:03 IST" name="close" finished-at="2026-03-30T19:27:03 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T05:00:08 PDT" name="launching_App" finished-at="2025-05-19T05:00:10 PDT" duration-ms="2072" status="PASS">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:27:03 IST" name="launching_App" finished-at="2026-03-30T19:27:05 IST" duration-ms="1954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching_App -->
-        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T05:00:10 PDT" name="purchaseOrder" data-provider="getdata" finished-at="2025-05-19T05:00:26 PDT" duration-ms="15626" status="PASS">
+        <test-method signature="purchaseOrder(java.util.HashMap)[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:27:05 IST" name="purchaseOrder" data-provider="getdata" finished-at="2026-03-30T19:27:07 IST" duration-ms="2540" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -84,22 +104,81 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (543, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb856d833795e5eca1055ea9bc6cd4a1, clickElement {id=f.E5B84E588CA9D2FD30AE4F2DC363A93B.d.F67F2FC23BF4F26274637573D4EA06FD.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62509}, goog:processID: 15924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62509/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (bb856d833795e5eca1055ea9bc6cd4a1)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: bb856d833795e5eca1055ea9bc6cd4a1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (543, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb856d833795e5eca1055ea9bc6cd4a1, clickElement {id=f.E5B84E588CA9D2FD30AE4F2DC363A93B.d.F67F2FC23BF4F26274637573D4EA06FD.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62509}, goog:processID: 15924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62509/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (bb856d833795e5eca1055ea9bc6cd4a1)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: bb856d833795e5eca1055ea9bc6cd4a1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at framework.pageobjects.Product_catalogue.addProductToCart(Product_catalogue.java:48)
+at framework.Testcase.PurchaseOrder.purchaseOrder(PurchaseOrder.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseOrder -->
-        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T05:00:26 PDT" name="close" finished-at="2025-05-19T05:00:26 PDT" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:27:08 IST" name="close" finished-at="2026-03-30T19:27:08 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method signature="orderHistoryTest()[pri:0, instance:framework.Testcase.PurchaseOrder@74e52ef6]" started-at="2025-05-19T05:00:26 PDT" name="orderHistoryTest" finished-at="2025-05-19T05:00:26 PDT" depends-on-methods="framework.Testcase.PurchaseOrder.purchaseOrder" duration-ms="0" status="SKIP">
+        <test-method signature="orderHistoryTest()[pri:0, instance:framework.Testcase.PurchaseOrder@7ac296f6]" started-at="2026-03-30T19:27:08 IST" name="orderHistoryTest" finished-at="2026-03-30T19:27:08 IST" depends-on-methods="framework.Testcase.PurchaseOrder.purchaseOrder" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method framework.Testcase.PurchaseOrder.orderHistoryTest() on instance framework.Testcase.PurchaseOrder@74e52ef6 depends on not successfully finished methods 
-[framework.Testcase.PurchaseOrder.purchaseOrder() on instance framework.Testcase.PurchaseOrder@74e52ef6]]]>
+              <![CDATA[Method framework.Testcase.PurchaseOrder.orderHistoryTest() on instance framework.Testcase.PurchaseOrder@7ac296f6 depends on not successfully finished methods 
+[framework.Testcase.PurchaseOrder.purchaseOrder() on instance framework.Testcase.PurchaseOrder@7ac296f6]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method framework.Testcase.PurchaseOrder.orderHistoryTest() on instance framework.Testcase.PurchaseOrder@74e52ef6 depends on not successfully finished methods 
-[framework.Testcase.PurchaseOrder.purchaseOrder() on instance framework.Testcase.PurchaseOrder@74e52ef6]
+              <![CDATA[java.lang.Throwable: Method framework.Testcase.PurchaseOrder.orderHistoryTest() on instance framework.Testcase.PurchaseOrder@7ac296f6 depends on not successfully finished methods 
+[framework.Testcase.PurchaseOrder.purchaseOrder() on instance framework.Testcase.PurchaseOrder@7ac296f6]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -107,18 +186,12 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.Throwable -->
@@ -126,6 +199,248 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- orderHistoryTest -->
       </class> <!-- framework.Testcase.PurchaseOrder -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- PurchaseOrder -->
+    <test started-at="2026-03-30T19:26:55 IST" name="Errorvalidation" finished-at="2026-03-30T19:27:12 IST" duration-ms="17485">
+      <class name="framework.Testcase.Error_Validation_Test">
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:26:55 IST" name="launching_App" finished-at="2026-03-30T19:26:58 IST" duration-ms="3597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching_App -->
+        <test-method retried="true" signature="logininvalid_Credencial()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:26:58 IST" name="logininvalid_Credencial" finished-at="2026-03-30T19:26:59 IST" duration-ms="598" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logininvalid_Credencial -->
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:26:59 IST" name="close" finished-at="2026-03-30T19:26:59 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:26:59 IST" name="launching_App" finished-at="2026-03-30T19:27:02 IST" duration-ms="2726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching_App -->
+        <test-method signature="logininvalid_Credencial()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:02 IST" name="logininvalid_Credencial" finished-at="2026-03-30T19:27:03 IST" duration-ms="1104" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at framework.Testcase.Error_Validation_Test.logininvalid_Credencial(Error_Validation_Test.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logininvalid_Credencial -->
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:03 IST" name="close" finished-at="2026-03-30T19:27:04 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:04 IST" name="launching_App" finished-at="2026-03-30T19:27:06 IST" duration-ms="2071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching_App -->
+        <test-method retried="true" signature="productErrorValidation()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:06 IST" name="productErrorValidation" finished-at="2026-03-30T19:27:08 IST" duration-ms="2484" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1157, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37a08269dab5cdd4d5e7a02b6bad7d07, clickElement {id=f.1E1997BE17777E7A601507DC42B3836B.d.133C57388B695CBDD9D9618950057BBF.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52509}, goog:processID: 18252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52509/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (37a08269dab5cdd4d5e7a02b6bad7d07)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 37a08269dab5cdd4d5e7a02b6bad7d07]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1157, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37a08269dab5cdd4d5e7a02b6bad7d07, clickElement {id=f.1E1997BE17777E7A601507DC42B3836B.d.133C57388B695CBDD9D9618950057BBF.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52509}, goog:processID: 18252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52509/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (37a08269dab5cdd4d5e7a02b6bad7d07)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 37a08269dab5cdd4d5e7a02b6bad7d07
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at framework.pageobjects.Product_catalogue.addProductToCart(Product_catalogue.java:48)
+at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:08 IST" name="close" finished-at="2026-03-30T19:27:08 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launching_App()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:08 IST" name="launching_App" finished-at="2026-03-30T19:27:10 IST" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching_App -->
+        <test-method signature="productErrorValidation()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:10 IST" name="productErrorValidation" finished-at="2026-03-30T19:27:12 IST" duration-ms="1931" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1157, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0086fe2b345f807ccae19165e7a5a818, clickElement {id=f.2EBA955B1C8AAC865E5DD9FF4E6B4150.d.5FEB02C0FBBBDE5BC31395FE8BBDA973.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61001}, goog:processID: 23448, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61001/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (0086fe2b345f807ccae19165e7a5a818)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 0086fe2b345f807ccae19165e7a5a818]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1157, 606)
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0086fe2b345f807ccae19165e7a5a818, clickElement {id=f.2EBA955B1C8AAC865E5DD9FF4E6B4150.d.5FEB02C0FBBBDE5BC31395FE8BBDA973.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ANTONY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61001}, goog:processID: 23448, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61001/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (0086fe2b345f807ccae19165e7a5a818)] -> css selector: div.mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 0086fe2b345f807ccae19165e7a5a818
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at framework.pageobjects.Product_catalogue.addProductToCart(Product_catalogue.java:48)
+at framework.Testcase.Error_Validation_Test.productErrorValidation(Error_Validation_Test.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:framework.Testcase.Error_Validation_Test@295cf707]" started-at="2026-03-30T19:27:12 IST" name="close" finished-at="2026-03-30T19:27:12 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- framework.Testcase.Error_Validation_Test -->
+    </test> <!-- Errorvalidation -->
+  </suite> <!-- Realtime -->
 </testng-results>

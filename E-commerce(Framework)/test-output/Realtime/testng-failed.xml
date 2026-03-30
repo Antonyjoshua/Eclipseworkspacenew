@@ -4,6 +4,18 @@
   <listeners>
     <listener class-name="framework.Testcomponents.Listensers"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="PurchaseOrder(failed)">
+    <classes>
+      <class name="framework.Testcase.PurchaseOrder">
+        <methods>
+          <include name="purchaseOrder" invocation-numbers="0 1"/>
+          <include name="orderHistoryTest"/>
+          <include name="close"/>
+          <include name="launching_App"/>
+        </methods>
+      </class> <!-- framework.Testcase.PurchaseOrder -->
+    </classes>
+  </test> <!-- PurchaseOrder(failed) -->
   <test thread-count="5" parallel="tests" name="Errorvalidation(failed)">
     <classes>
       <class name="framework.Testcase.Error_Validation_Test">
